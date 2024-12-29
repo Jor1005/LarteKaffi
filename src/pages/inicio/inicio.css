@@ -1,0 +1,79 @@
+.inicio {
+  background-image: url('/img/fondo.png'); 
+  background-repeat: no-repeat; 
+  background-size: contain; 
+  background-position: left; 
+  height: 100vh; 
+  display: grid; 
+  grid-template-rows: auto auto; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  justify-content: center; 
+  align-items: center;
+  color: black;
+  /* background: 
+  linear-gradient(to bottom, rgb(207, 206, 206)49%, #502E07 1%, #ffffff 50%) ; */
+   /* Gradiente de fondo */
+}
+
+/* Posicionamiento en la pirámide */
+.imagen {
+  margin-top: 0;
+  grid-column: 1; /* Primera columna */
+  grid-row: 1; /* Primera fila */
+}
+
+.imagen img{
+  margin: 0;
+  width: 24pc;
+}
+
+.slogans {
+  grid-column: 2; /* Segunda columna */
+  grid-row: 1; /* Primera fila */
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.textoyboton {
+  grid-column: 1 / span 2; /* Ocupa ambas columnas */
+  grid-row: 2; /* Segunda fila */
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.textos{
+  font-size: 1.5em;
+}
+
+.texto1{
+  margin: 0;
+}
+
+.texto2{
+  margin: 10px;
+}
+
+/* Estilos adicionales */
+.slogan1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: start;
+  color: black;
+}
+
+.boton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: gray;
+}
