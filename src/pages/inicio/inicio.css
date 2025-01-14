@@ -1,31 +1,29 @@
 .inicio {
+  margin-top: 10px;
   background-image: url('/img/fondo.png'); 
   background-repeat: no-repeat; 
   background-size: contain; 
   background-position: left; 
   height: 100vh; 
   display: grid; 
-  grid-template-rows: auto auto; 
+  grid-template-rows:auto auto; 
   grid-template-columns: repeat(2, 1fr); 
-  gap: 20px; 
   justify-content: center; 
   align-items: center;
   color: black;
-  /* background: 
-  linear-gradient(to bottom, rgb(207, 206, 206)49%, #502E07 1%, #ffffff 50%) ; */
-   /* Gradiente de fondo */
+  background: 
+  linear-gradient(to bottom, rgb(207, 206, 206)58%, #502E07 1%, #ffffff 59%) ; 
 }
 
 /* Posicionamiento en la pirámide */
 .imagen {
-  margin-top: 0;
   grid-column: 1; /* Primera columna */
   grid-row: 1; /* Primera fila */
 }
 
 .imagen img{
   margin: 0;
-  width: 24pc;
+  width: 21.5pc;
 }
 
 .slogans {
@@ -34,6 +32,26 @@
   display: flex;
   flex-direction: column;
   text-align: right;
+  margin-left: -200px;
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  text-shadow: 3px 2.5px 3.7px rgba(0, 0, 0, 0.5);;
+}
+
+
+.slogan1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: start;
+  color: black;
+}
+.slogan2{
+  font-size: 3rem;
+  margin-right: 50px;
+  text-align: end;
+  color: black;
+  margin-left: -150px;
 }
 
 .textoyboton {
@@ -45,25 +63,26 @@
   margin-bottom: 5%;
 }
 
+.textoyboton{
+  text-align: end ;
+}
+
 .textos{
   font-size: 1.5em;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  
 }
 
 .texto1{
-  margin: 0;
+  margin-bottom: 1px;
 }
 
 .texto2{
-  margin: 10px;
+  margin: 0;
+  text-align: end;
 }
 
-/* Estilos adicionales */
-.slogan1 {
-  font-size: 3rem;
-  margin: 0;
-  text-align: start;
-  color: black;
-}
 
 .boton {
   margin-top: 10px;

@@ -15,6 +15,9 @@
     font-weight: 300;
     letter-spacing: 1.3px;
     height: 70px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.6); 
+  }
+    
 
   .logo {
     margin: 0px;
@@ -63,11 +66,8 @@
   }
   
   
-  }
   
-  .main-content {
-    padding: 20px;
-  }
+
   
   
 
