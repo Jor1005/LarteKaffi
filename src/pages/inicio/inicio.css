@@ -109,3 +109,10 @@
   color:#DDB975;
   border-color: #DDB975;
 }
+
+
+@media (max-width: 426px) {
+  .imagen{
+    display: none;
+  }
+}

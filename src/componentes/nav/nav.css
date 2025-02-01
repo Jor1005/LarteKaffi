@@ -89,3 +89,10 @@
     background: none;
   }
   
+  @media (max-width: 426px) {
+    .navbar{
+      display: none;
+    }
+  }
+
+  
