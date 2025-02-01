@@ -17,7 +17,7 @@ function Inicio() {
           <p className='texto1'>Lleva el alma del café a tu hogar con</p>
           <p className='texto2'>nuestros accesorios de calidad</p>
         </div>
-      <button className='boton'>Comprar ahora</button>
+      <button className='boton'>Productos</button>
       </div>
     </section>
   );

@@ -86,13 +86,26 @@
 
 .boton {
   margin-top: 10px;
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border: none;
+  padding: 5px 50px;
+  background-color: #42403E;
+  color:#DDB975;
+  border:solid 7px;
   cursor: pointer;
+  border-radius: 0%;
+  border-color: #DDB975;
+  font-size: 1.7em;
+  font-family: "Montserrat", serif;
+  box-shadow: 9px 9px 2px #42403E;
 }
 
 .boton:hover {
-  background-color: gray;
+  background-color: #DDB975;
+  border: #42403E solid 7px;
+  color:#42403E;
+}
+
+.boton:active{
+  background-color: #42403E;
+  color:#DDB975;
+  border-color: #DDB975;
 }
