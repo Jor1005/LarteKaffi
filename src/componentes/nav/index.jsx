@@ -4,7 +4,7 @@ function Nav(){
     
       return <header className="navbar">
         <div className="logo">
-            <img src="/img/logo.png" alt='logo'></img>
+            <img src="img/logo.png" alt='logo'></img>
         </div>
         <ul className="nav-links">
           <li>INICIO</li>
@@ -14,7 +14,7 @@ function Nav(){
           <li>CONTACTO</li>
         </ul>
         <div className="lupa">
-          <img src="/img/lupa 2.png" alt="lupa" />
+          <img src="img/lupa 2.png" alt="lupa" />
         </div>
       </header>
       }

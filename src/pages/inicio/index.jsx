@@ -5,7 +5,7 @@ function Inicio() {
   return (
     <section className="inicio">
       <div className='imagen'>
-        <img src="/img/lateras.jpg" alt="" />
+        <img src="img/lateras.jpg" alt="" />
       </div>
       <div className='slogans'>
         <h1 className='slogan1'>Perfecciona tu arte,</h1>
