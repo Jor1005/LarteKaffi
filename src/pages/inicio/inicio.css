@@ -1,9 +1,9 @@
 .inicio {
   margin-top: 10px;
-  background-image: url('/img/fondo.png'); 
+  /* background-image: url('/img/fondo.png'); 
   background-repeat: no-repeat; 
   background-size: contain; 
-  background-position: left; 
+  background-position: left;  */
   height: 100vh; 
   display: grid; 
   grid-template-rows:auto auto; 
@@ -12,7 +12,7 @@
   align-items: center;
   color: black;
   background: 
-  linear-gradient(to bottom, rgb(207, 206, 206)58%, #502E07 1%, #ffffff 59%) ; 
+  linear-gradient(to bottom, rgb(207, 206, 206)58%, #502E07 1%, #ffffff 59%); 
 }
 
 /* Posicionamiento en la pirámide */
