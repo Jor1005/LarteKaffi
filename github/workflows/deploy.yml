@@ -1,0 +1,36 @@
+name: Deploy a GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Cambia esto si tu rama principal tiene otro nombre
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: 🏗️ Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: 📦 Instalar dependencias
+        run: npm install
+
+      - name: 🔧 Construir el proyecto
+        run: npm run build
+
+      - name: 🚀 Subir a GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
