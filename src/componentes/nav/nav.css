@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     background-color: #2B2A28;
-    color: white;
     font-family: Arial, sans-serif;
     color: #ffffff;
     text-align: center;
@@ -49,7 +48,7 @@
     cursor: pointer;
     font-size: 1em;
     position: relative; /* Necesario para el subrayado con ::after */
-    color: white;
+    color: rgb(255, 255, 255);
     transition: all 0.3s ease;
   }
   
@@ -73,7 +72,12 @@
     left: 50%;
   }
   
-  
+  .nav-links li:active{
+    color: #DDB975;
+    transition: none;
+  }
+
+
   .lupa{
     height: 50px;
     width:50px;
