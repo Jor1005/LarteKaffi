@@ -1,5 +1,6 @@
 .inicio {
   margin-top: 10px;
+  margin-bottom: 140px;
   height: 100vh; 
   display: grid; 
   grid-template-rows:auto auto; 
@@ -61,13 +62,15 @@
 
 .textoyboton{
   text-align: end ;
+  padding-bottom: 32vh;
+  background: linear-gradient(to bottom, #ffffff 55%, #FFF1D7);
+  transition: background 0.5s ease-in-out;
 }
 
 .textos{
   font-size: 1.5em;
   font-family: "Montserrat", serif;
   font-weight: bold;
-  
 }
 
 .texto1{

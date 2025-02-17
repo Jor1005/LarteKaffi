@@ -7,13 +7,14 @@ import GlobalStyles from '../componentes/globalstyles';
 import './index.css'
 
 function App() {
+ 
   return (
-    <div>
+    <div >
       <GlobalStyles />
       <Nav/>
       <Inicio/>
-      <SobreNosotros/>
       <Productos/>
+      <SobreNosotros/>
       <div>
       </div>
     </div>

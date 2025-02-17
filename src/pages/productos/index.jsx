@@ -1,7 +1,10 @@
+import React from "react";
+import "./productos.css"
+
 function Productos() {
     return (
       <section id="productos" className="productos">
-        <h1>Productos</h1>
+        <h1>Categorias</h1>
         <p>Aquí iran los productos.</p>
       </section>
     );
