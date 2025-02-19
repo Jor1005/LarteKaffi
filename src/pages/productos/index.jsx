@@ -5,7 +5,7 @@ function Productos() {
     return (
       <section id="productos" className="productos">
         <h1>Categorias</h1>
-        <p>Aquí iran los productos. perro salchichca gordo bachicha</p>
+        <p>Aquí iran los productos. perro salchicha gordo bachicha</p>
       </section>
     );
   }

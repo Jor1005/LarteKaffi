@@ -11,13 +11,12 @@ body{
     background-size:cover;
     background-position: center;
     background-attachment: fixed; 
-    height: 50vh;
+    height: 40vh;
     color: white;
     text-align: center;
-    
+    font-size: 1.7em;
 }
 
 h1{
-    font-size: 40px;
-    
+    padding-top: 1%;
 }
