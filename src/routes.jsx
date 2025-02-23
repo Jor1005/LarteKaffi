@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import App from "../src/pages/App";
-import Tienda from "./pages/Tienda";
+import Tienda from "./pages/tienda";
 import Socios from "./pages/socios";
 import Blog from "./pages/blog";
 
