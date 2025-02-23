@@ -1,7 +1,12 @@
 import React from 'react';
 import './inicio.css';
+import { useNavigate } from "react-router-dom";
+
 
 function Inicio() {
+
+  const navigate = useNavigate();
+
   return (
     <section className="inicio">
       <div className='imagen'>
@@ -17,7 +22,7 @@ function Inicio() {
           <p className='texto1'>Lleva el alma del café a tu hogar con</p>
           <p className='texto2'>nuestros accesorios de calidad</p>
         </div>
-      <button className='boton'>Productos</button>
+      <button className='boton' onClick={() => navigate("/tienda")}>Productos</button>
       </div>
     </section>
   );
