@@ -11,7 +11,7 @@ function Productos() {
           </div>
           <div className="producto" id="balanza"><img src="img/latte.png" alt="Latte Art" /> Balanzas</div>
           <div className="producto" id="expresso"><img src="img/latte.png" alt="Latte Art" />Expresso Bar</div>
-          <div className="producto" id="hervidores"><img src="img/latte.png" alt="Latte Art" />Hervidores inteligente</div>
+          <div className="producto" id="hervidores"><img src="img/latte.png" alt="Latte Art" />Hervidores inteligentes</div>
           <div className="producto" id="brewbar"> <img src="img/latte.png" alt="Latte Art" />Brew Bar</div>
         </div>
       </section>

@@ -113,7 +113,13 @@
 
 
 @media (max-width: 426px) {
+ 
+
   .imagen{
+    display: none;
+  }
+
+  .boton{
     display: none;
   }
 }

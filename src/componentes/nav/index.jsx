@@ -1,27 +1,45 @@
-import "./nav.css"
+import "./nav.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
+function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <header className="navbar">
+      <div className="logo">
+        <Link to="/">
+          <img src="img/logo.png" alt="logo" />
+        </Link>
+      </div>
+
+     
+      <button className="open-sidebar-button" onClick={() => setMenuOpen(true)}>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+      </button>
 
 
-
-function Nav(){
-    
-      return <header className="navbar">
-        <div className="logo"> 
-            <Link to="/">
-            <img  src="img/logo.png" alt='logo'></img> 
-            </Link>
-        </div>
+      <nav className={`side-bar ${menuOpen ? "active" : ""}`}>
+        <button className="close-sidebar-button" onClick={() => setMenuOpen(false)}>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg>
+        </button>
         <ul className="nav-links">
-  
-          <li>SOBRE NOSOTROS</li>
-            <li><Link to="/tienda">PRODUCTOS</Link></li>
-          <li><Link to="/blog">BLOG</Link></li>
-          <li><Link to="/socios">SOCIOS</Link></li> 
+          <li><Link to="/" onClick={() => setMenuOpen(false)}>SOBRE NOSOTROS</Link></li>
+          <li><Link to="/tienda" onClick={() => setMenuOpen(false)}>PRODUCTOS</Link></li>
+          <li><Link to="/blog" onClick={() => setMenuOpen(false)}>BLOG</Link></li>
+          <li><Link to="/socios" onClick={() => setMenuOpen(false)}>SOCIOS</Link></li>
         </ul>
-        <div className="lupa">
-          <img src="img/lupa 2.png" alt="lupa" />
-        </div>
-      </header>
-      }
+      </nav>
 
-      export default Nav
+      <div className="lupa">
+        <img src="img/lupa 2.png" alt="lupa" />
+      </div>
+    </header>
+  );
+}
+
+export default Nav;
