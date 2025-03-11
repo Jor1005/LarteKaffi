@@ -1,8 +1,26 @@
-
 .tienda {
     min-height: 100vh;
     background-color: #fff;
     color: #2B2A28;
-    text-align: center;
+    text-align: left;
 
+}
+.tienda-container{
+    margin:3% 10%;
+}
+.tienda h1{
+    padding: 20px;
+    font-size: 2em;
+}
+.tienda p{
+    padding: 20px;  
+}
+.category{
+    padding: 20px;
+    height: 50vh;
+}
+
+
+@media (max-width: 450px){
+   
 }

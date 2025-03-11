@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../../componentes/nav";
-import "./socios.css"; // Estilos específicos de la tienda
+import "./socios.css";
 
 function Socios() {
   return (
