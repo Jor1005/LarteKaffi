@@ -5,19 +5,25 @@
     text-align: left;
 
 }
+h1{
+    padding-left: 2%;
+}
 .tienda-container{
-    margin:3% 10%;
+    margin:3% 5%;
+    display: flex;
+    flex-direction: column;
 }
-.tienda h1{
-    padding: 20px;
-    font-size: 2em;
-}
+
 .tienda p{
     padding: 20px;  
 }
 .category{
-    padding: 20px;
     height: 50vh;
+}
+.producto-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
 }
 
 

@@ -4,8 +4,8 @@ import './sobrelarte.css'
 function SobreNosotros() {
   return (
     <section className="sobrenosotros">
-      <h1>Sobre Nosotros </h1>
-      <p>Aquí irá información sobre nuestra historia y pasión por el café.</p>
+      <h1>Mejor aqui ira otra frase </h1>
+      <p>porque no se me ocurre algo mas </p>
     </section>
   );
 }

@@ -30,6 +30,10 @@
     height: auto;
 }
 
+
+
+
+
 @media (max-width: 450px){
     .container-main{
         grid-template-columns: 1fr;
