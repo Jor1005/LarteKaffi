@@ -6,7 +6,7 @@ function Categorias() {
       <section id="productos" className="productos">
         <h1>CATEGORIAS</h1>
         <div className="categorias">
-          <div className="categoria" id="latteart" > <img src="img/Latera.png" alt="Latte Art" />
+          <div className="categoria" id="latteart" ><img src="img/Latera.png" alt="Latte Art" />
           <p>Latte Art</p> 
           </div>
           <div className="categoria" id="balanza"><img src="img/latte.png" alt="Latte Art" />

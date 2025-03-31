@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
+import Slider from "react-slick";
 import Nav from "../../componentes/nav";
 import "./tienda.css";
 function Tienda() {
@@ -6,14 +7,23 @@ function Tienda() {
     
     <section className="tienda">
       <Nav />
-      <h1>Productos</h1>
+      {/* <h1>Productos</h1>
       <div className="tienda-container">
       <section className="category">
         <h2>Latte Art</h2>
         <div className="producto-container">
-          <div className="latera">Taza latera 1</div>
-          <div className="latera">Taza latera 2</div>
-          <div className="latera">Taza latera 3</div>
+          <div className="latera">
+            <img src="img/Latera Blanca.png" alt="Latera Blanca" />
+          </div>
+          <div className="latera">
+          <img src="img/Latera negra.png" alt="Latera Negra" />
+          </div>
+          <div className="latera">
+          <img src="img/Latera azul.png" alt="Latera Azul" />
+          </div>
+          <div className="latera">
+          <img src="img/Latera.png" alt="Latera Azul" />
+          </div>
         </div>
       </section>
       <section className="category">
@@ -48,9 +58,11 @@ function Tienda() {
           <div className="Brew">Brew 3</div>
         </div>
       </section>
-      </div>
+      </div> */}
     </section>
   );
 }
 
 export default Tienda;
+
+

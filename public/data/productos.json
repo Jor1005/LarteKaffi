@@ -1,0 +1,20 @@
+[
+    {
+        "categoria":"Latte Art",
+        "productos": [
+            { "nombre": "Latera Blanca", "id": 1, "img": "img/Latera Blanca.png"},
+            { "nombre": "Latera Negra","id": 2, "img": "img/Latera negra.png"},
+            { "nombre": "Latera Azul", "id": 3,"img": "img/Latera azul.png"},
+            { "nombre": "Latera", "id": 4,"img": "img/Latera.png"}
+        ]
+    },
+    {
+        "categoria":"Balanzas",
+        "productos": [
+            { "nombre": "Balanza 1", "img": "img/balanza1.png"},
+            { "nombre": "Balanza 2", "img": "img/balanza2.png"},
+            { "nombre": "Balanza 3", "img": "img/balanza3.png"},
+            { "nombre": "Balanza 4", "img": "img/balanza4.png"}
+        ]
+    }
+]
