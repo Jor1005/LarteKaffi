@@ -1,5 +1,5 @@
 import React from "react";
-import './sobrelarte.css'
+import "./sobrelarte.css";
 
 function SobreNosotros() {
   return (

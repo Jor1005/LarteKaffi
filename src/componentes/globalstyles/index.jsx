@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-
-const GlobalStyles = createGlobalStyle `
+const GlobalStyles = createGlobalStyle`
     * {
     /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -327,7 +326,6 @@ template {
 
     }
 
-`
+`;
 
-
-export default GlobalStyles
+export default GlobalStyles;

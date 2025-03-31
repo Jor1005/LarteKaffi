@@ -5,7 +5,7 @@ import "./socios.css";
 function Socios() {
   return (
     <section className="socios">
-      <Nav /> 
+      <Nav />
       <h1>Bienvenido a socios</h1>
       <p>Aquí puedes ver nuestros socios.</p>
     </section>
