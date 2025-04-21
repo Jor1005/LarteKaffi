@@ -19,7 +19,7 @@ function Tienda() {
   );
 }
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 600,
     slidesToShow: 3,
@@ -41,9 +41,9 @@ function Tienda() {
   return (
     <section className="tienda">
       <Nav />
-      <h1>Productos</h1>
+      <h1 className="title">Productos</h1>
       <div className="tienda-container">
-      <section className="category">
+      <section className="category_a">
         <h2>Latte Art</h2>
      <Slider {...settings}>
           <div className="producto-container" id="latera">
@@ -61,7 +61,7 @@ function Tienda() {
           </Slider>
      
       </section>
-      <section className="category">
+      <section className="category_b">
         <h2>Balanzas</h2>
         <Slider {...settings}>
           <div className="Balanza">Balanza 1</div>
@@ -69,7 +69,7 @@ function Tienda() {
           <div className="Balanza">Balanza 3</div>
         </Slider>
       </section>
-      <section className="category">
+      <section className="category_a">
         <h2>Expresso Bar</h2>
         <div className="producto-container">
           <div className="Expresso">Expresso 1</div>
@@ -77,7 +77,7 @@ function Tienda() {
           <div className="Expresso">Expresso 3</div>
         </div>
       </section>
-      <section className="category">
+      <section className="category_b">
         <h2>Hervidores Inteligentes</h2>
         <div className="producto-container">
           <div className="Hervirdor">Hervidor 1</div>
@@ -85,7 +85,7 @@ function Tienda() {
           <div className="Hervirdor">Hervidor 3</div>
         </div>
       </section>
-      <section className="category">
+      <section className="category_a">
         <h2>Brew Bar</h2>
         <div className="producto-container">
           <div className="Brew">Brew 1</div>

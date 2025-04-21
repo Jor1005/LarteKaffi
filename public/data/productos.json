@@ -5,7 +5,7 @@
       { "nombre": "Latera Blanca", "id": 1, "img": "img/Latera Blanca.png" },
       { "nombre": "Latera Negra", "id": 2, "img": "img/Latera negra.png" },
       { "nombre": "Latera Azul", "id": 3, "img": "img/Latera azul.png" },
-      { "nombre": "Latera", "id": 4, "img": "img/Latera.png" }
+      { "nombre": "Latera clasica", "id": 4, "img": "img/Latera.png" }
     ]
   },
   {

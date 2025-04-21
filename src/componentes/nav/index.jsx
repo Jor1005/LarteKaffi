@@ -2,6 +2,7 @@ import "./nav.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+// esto es el desplegable para moviles, lo anoto porque la otravez me olvide que era esto jaja, porfa diego no me despidas//
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 

@@ -7,7 +7,7 @@ function Categorias() {
       <h1>CATEGORIAS</h1>
       <div className="categorias">
         <div className="categoria" id="latteart">
-          <img src="img/Latera.png" alt="Latte Art" />
+          <img src="img/latteart.jpg" alt="Latte Art" />
           <p>Latte Art</p>
         </div>
         <div className="categoria" id="balanza">

@@ -1,6 +1,9 @@
 .socios {
   min-height: 100vh;
-  background-color: #fff;
+  background-color:#c26f1c;
+  background-image: url("/img/wood.png") ;
+  background-repeat:repeat-y;
+  background-size: cover;
   color: #2b2a28;
   text-align: center;
 }

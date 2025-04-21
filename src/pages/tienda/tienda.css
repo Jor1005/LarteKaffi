@@ -3,9 +3,14 @@
   background-color: #fff;
   color: #2b2a28;
   text-align: left;
+  background: lightgray;
+  background-blend-mode: overlay;
+  background-image: url(/img/clean-gray-paper.png);
 }
-h1 {
+
+.title {
   padding-left: 2%;
+  text-decoration: underline 4px;
 }
 .tienda-container {
   margin: 3% 5%;
@@ -16,31 +21,70 @@ h1 {
 .tienda p {
   padding: 20px;
 }
-.category {
+.category_b{
   height: 50vh;
+  margin: 0px -60px;
 }
+
+.category_b h2{
+  text-align: center;
+}
+
+.category_a{
+  background-color: #aeadab;
+  height: 50vh;
+  margin: 0px -60px;
+  padding-bottom: 2%;
+}
+
+.category_a h2{
+  text-align: center;
+}
+
 .producto-container {
-    display: flex;
-    width: 150px;
-    overflow: hidden;
+  display: flex;
+  width: 150px;
+  overflow: hidden;
 }
 
-.producto-container img{
-    object-fit: cover;
-    height: 200px;
-    width: 100%;
+.producto-container img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  cursor: pointer;
 }
 
-.prev{
-    margin: 2% 0%;
-    background-color: aqua; 
+/* Seccion del slider dou como el homero */
+
+.slick-track {
+  position: sticky;
+  margin: 0px 40px;
+
 }
 
-.slick-track{
-    position:sticky;
+.slick-slider {
+  width: 90%;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .slick-slide img {
-    width: 100%;
-    max-width: 200px;
+  width: 100%;
+  max-width: 200px;
+  border: solid 3px #64280de6;
+  border-radius: 30px;
+
+  outline: none;
+}
+
+.slick-list {
+  margin: 0 20px;
+}
+
+.slick-prev {
+  left: -45px;
+}
+
+.slick-next {
+  right: -45px;
 }
