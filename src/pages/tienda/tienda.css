@@ -32,7 +32,7 @@
 
 .category_a{
   background-color: #aeadab;
-  height: 50vh;
+  height: 60vh;
   margin: 0px -60px;
   padding-bottom: 2%;
 }
@@ -45,20 +45,32 @@
   display: flex;
   width: 150px;
   overflow: hidden;
+  place-items: center;
 }
 
 .producto-container img {
   object-fit: cover;
   height: 200px;
   width: 100%;
+  border-radius: 10px;
+  border: 2px solid #64280de6;
+  margin-bottom: 8px;
   cursor: pointer;
+}
+
+.producto-container p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #2b2a28;
+  
 }
 
 /* Seccion del slider dou como el homero */
 
 .slick-track {
   position: sticky;
-  margin: 0px 40px;
+  margin: 0px ;
 
 }
 

@@ -11,7 +11,7 @@ function Categorias() {
           <p>Latte Art</p>
         </div>
         <div className="categoria" id="balanza">
-          <img src="img/latte.png" alt="Latte Art" />
+          <img src="img/balanza1.jpg" alt="Latte Art" />
           <p>Balanzas</p>
         </div>
         <div className="categoria" id="expresso">
@@ -19,7 +19,7 @@ function Categorias() {
           <p>Expresso Bar</p>
         </div>
         <div className="categoria" id="hervidores">
-          <img src="img/latte.png" alt="Latte Art" />
+          <img src="img/hervidora.jpg" alt="Latte Art" />
           <p>Hervidores Inteligentes</p>
         </div>
         <div className="categoria" id="brewbar">

@@ -8,13 +8,11 @@
       { "nombre": "Latera clasica", "id": 4, "img": "img/Latera.png" }
     ]
   },
+  
   {
     "categoria": "Balanzas",
     "productos": [
-      { "nombre": "Balanza 1", "img": "img/balanza1.png" },
-      { "nombre": "Balanza 2", "img": "img/balanza2.png" },
-      { "nombre": "Balanza 3", "img": "img/balanza3.png" },
-      { "nombre": "Balanza 4", "img": "img/balanza4.png" }
+      { "nombre": "Balanza 1", "id": 1, "img": "img/balanza1.jpg" }
     ]
   }
 ]
