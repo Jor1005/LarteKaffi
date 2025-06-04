@@ -32,11 +32,11 @@
   display: flex;
   flex-direction: column;
   text-align: right;
-  margin-left: min(-200px);
   font-family: "Montserrat", serif;
   font-style: normal;
   font-optical-sizing: auto;
   text-shadow: 3px 2.5px 3.7px rgba(0, 0, 0, 0.5);
+  margin-left: -150px;
 }
 
 .slogan1 {
@@ -111,11 +111,31 @@
 }
 
 @media (max-width: 426px) {
-  .imagen {
+  
+  .imagen{
+    display: none;
+  }
+  .boton {
     display: none;
   }
 
-  .boton {
-    display: none;
+  .slogans{
+    box-sizing: border-box;
+    width:max-content;
+    margin-right: 40px;
+  }
+
+  .slogan1,.slogan2{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .slogan2{
+    margin: 10px 0px 0px 0px ;
+  }
+
+  .textoyboton, .texto2{
+    text-align: center;
+    padding: 0;
   }
 }

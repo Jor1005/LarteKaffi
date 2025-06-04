@@ -107,6 +107,7 @@
 
   .open-sidebar-button {
     display: block;
+    background-color: transparent;
   }
 
   .side-bar {
