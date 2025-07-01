@@ -7,9 +7,9 @@ function Inicio() {
 
   return (
     <section className="inicio">
-      <div className="imagen">
+      <picture className="imagen">
         <img src="img/lateras.jpg" alt="" />
-      </div>
+      </picture>
       <div className="slogans">
         <h1 className="slogan1">Perfecciona tu arte,</h1>
         <h1 className="slogan2">completa tu estación.</h1>
