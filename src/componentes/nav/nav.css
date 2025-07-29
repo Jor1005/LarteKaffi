@@ -146,10 +146,14 @@
     gap: 20px;
     width: 100%;
     padding: 20px;
+    
   }
 
   .side-bar .nav-links li {
     width: 100%;
+    border-style: outset;
+    
+    
   }
 
   .side-bar .nav-links li a {
@@ -157,14 +161,16 @@
     width: 20%;
     padding: 15px;
     color: white;
-    text-decoration: none;
+    
   }
 
   .close-sidebar-button {
     display: block;
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 200px;
+    padding: 5px;
+    background-color: transparent;
   }
 
   .lupa {

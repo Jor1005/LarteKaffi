@@ -4,8 +4,8 @@ import "./sobrelarte.css";
 function SobreNosotros() {
   return (
     <section className="sobrenosotros">
-      <h1>Mejor aqui ira otra frase </h1>
-      <p>porque no se me ocurre algo mas </p>
+      <h1>Maestría en cada taza.</h1>
+      <p> Equipamiento de barista para quienes exigen lo mejor. </p>
     </section>
   );
 }

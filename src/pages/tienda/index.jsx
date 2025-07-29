@@ -23,7 +23,7 @@ function Tienda() {
           textAlign: "center",
           borderRadius: "10%",
           fontSize: "20%",
-          cursor: "pointer"
+          cursor: "pointer",
         }}
         onClick={onClick}
       />

@@ -1,8 +1,6 @@
 .inicio {
-  
   margin-bottom: 140px;
   height: 100vh;
-  
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: repeat(2, 1fr);
@@ -111,33 +109,67 @@
   border-color: #ddb975;
 }
 
+@media (max-width: 376px){
+  .slogans {
+    padding: 100px 0px 100px 30px !important;
+
+}
+
+@media (max-width: 321px){
+ .slogans{
+  width: auto !important;
+  padding: 50px 0 50px 0 !important;
+ }
+
+
+}
+}
 @media (max-width: 426px) {
+
+  .inicio{
+    margin-bottom: 0;
+  }
+
+   .imagen img{
+    display: none;
+   }
+
   
-  .imagen{
-    display: none;
-  }
-  .boton {
-    display: none;
-  }
 
   .slogans{
     box-sizing: border-box;
     width:max-content;
-    margin-right: 40px;
+    padding: 100px 20px 100px 20px;
   }
 
   .slogan1,.slogan2{
-    font-size: 2rem;
-    text-align: center;
+    font-size: 2rem !important;
   }
 
   .slogan2{
-    margin: 10px 0px 0px 0px ;
+    margin: 10px 0px -10px 30px ;
+  }
+
+  .textos{
+    border-top: solid #502e07 2px;
+    
+  }
+
+  .textoyboton{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+
   }
 
   .textoyboton, .texto2{
     text-align: center;
-    padding: 0;
+
+  }
+
+  .boton{
+    margin-top: 40px;
+
   }
 }
 
