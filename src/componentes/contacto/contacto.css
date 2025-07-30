@@ -4,3 +4,24 @@
   padding: 1%;
   text-align: center;
 }
+.contacto__container{
+  display: flex;
+  justify-content: center;
+}
+.whatsapp{
+  display: inline-block;
+  background-color: transparent;
+}
+
+.whatsapp img{
+  display: block;
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  max-width: 200%;
+}
+
+.whatsapp img:hover {
+  transform: scale(1.05);
+}
