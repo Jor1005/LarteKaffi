@@ -5,9 +5,9 @@ function Footer() {
   return (
     <section className="footer">
       <div className="footer-content">
-        <div className="footer-left">
-          <h3>Footer Left</h3>
-        </div>
+          <h3>Larte Kafi</h3>
+          <p>Perfecciona tu arte, completa tu estación.</p>
+          <p>© 2025 Copyright </p>
       </div>
     </section>
   );

@@ -46,7 +46,8 @@ function Categorias() {
       },
       {
         breakpoint: 600,
-        settings: { slidesToShow: 1 }
+        settings: { slidesToShow: 1 },
+        dots: true
       }
     ]
   };

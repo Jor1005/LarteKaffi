@@ -47,3 +47,13 @@
   font-size: 15px;
   font-style: normal;
 }
+
+@media (max-width: 770px){
+  .socios_container{
+    grid-template-columns: 1fr;
+  }
+
+  .socios_card{
+    grid-template-columns: 1fr;
+  }
+}

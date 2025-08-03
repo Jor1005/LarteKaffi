@@ -1,11 +1,12 @@
 import React from "react";
-import "./contacto.css";
+import "./inicio-banner.css";
 
-function contacto() {
+function InicioBanner() {
   return (
-    <section className="contacto">
-      <h1>CONTACTO</h1>
-      <div className="contacto__container">
+    <section className="inicioBanner">
+      <h1>¡Tu arte merece las mejores herramientas!</h1>
+      <p>Contáctanos en las siguientes redes: </p>
+      <div className="redesContainer">
         <a className="whatsapp" href="https://wa.me/51940136456?text=Hola%20estoy%20interesado%20en%20su%20producto" target="_blank" rel="noopener noreferrer">
             <img src="\img\WhatsApp.svg.webp" alt="" />      
         </a>
@@ -13,9 +14,8 @@ function contacto() {
         <img src="public\img\insta.avif" alt="Instagram Logo" />
         </a>
       </div>
-      
     </section>
   );
 }
 
-export default contacto;
+export default InicioBanner;

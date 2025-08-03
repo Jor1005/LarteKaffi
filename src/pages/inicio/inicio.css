@@ -109,20 +109,21 @@
   border-color: #ddb975;
 }
 
-@media (max-width: 376px){
+@media (max-width: 1026px){
   .slogans {
     padding: 100px 0px 100px 30px !important;
-
-}
-
-@media (max-width: 321px){
- .slogans{
-  width: auto !important;
-  padding: 50px 0 50px 0 !important;
- }
-
-
-}
+  }
+  .slogan1{
+    padding-left: 40px;
+  }
+  .slogan2{
+    padding-right: 10px;
+  }
+  .textos{
+    text-align: center;
+  }
+  .texto2{
+    text-align: center;
 }
 @media (max-width: 426px) {
 
@@ -173,12 +174,13 @@
   }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1050px){
 
 
 .slogan1, .slogan2{
   margin-left: 20px;
   margin-right: 15px;
   font-size: 2.5rem;
+  }
 }
 }

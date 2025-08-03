@@ -1,9 +1,8 @@
 import React from "react";
 import Nav from "../componentes/nav";
 import Inicio from "./inicio";
-import SobreNosotros from "./sobrelarte";
+import InicioBanner from "./inicio/inicio-banner";
 import Categorias from "./inicio/categorias";
-import Contacto from "../componentes/contacto";
 import Footer from "../componentes/footer";
 import GlobalStyles from "../componentes/globalstyles";
 import "./index.css";
@@ -15,8 +14,7 @@ function App() {
       <Nav />
       <Inicio />
       <Categorias />
-      <SobreNosotros />
-      <Contacto />
+      <InicioBanner />  
       <Footer />
       <div></div>
     </div>

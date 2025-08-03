@@ -61,6 +61,11 @@ function Nav() {
         <ul className="nav-links">
           <li>
             <Link to="/" onClick={() => setMenuOpen(false)}>
+              INICIO
+            </Link>
+          </li>
+          <li>
+            <Link to="/sobre-nosotros" onClick={() => setMenuOpen(false)}>
               SOBRE NOSOTROS
             </Link>
           </li>

@@ -1,0 +1,27 @@
+
+.sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    height: 110vh;
+    background-color: #FFF1D7 ;
+}
+.sobre-nosotros h1{
+    font-size: 2.5rem;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    text-align: center;
+}
+.diego{
+    margin-top: 5%;
+    width:30vh;
+    height: auto;
+    text-align: center;
+}
+.diego img{
+    max-width:100%;
+    border-radius: 20px;
+    border: #efeeee solid 3px;
+    box-shadow: 2px 2px 30px 10px #a77031;
+}
