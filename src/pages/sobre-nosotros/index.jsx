@@ -8,7 +8,7 @@ function sobreNosotros(){
             <Nav />
             <div className="sobre-nosotros">
                 <div className="diego">
-                <img src="public\img\Diego.png" alt="" />
+                <img src="\img\Diego.png" alt="" />
                 </div>
                 <h1 className="titulo">LA PERSONA DETRAS DE LARTE KAFI</h1>
                 <p>Diego es el crack Diego es el crack Diego es el crack Diego es el crack Diego es el crack Diego es el crack Diego es el crack Diego es el crack Diego es el crack Diego es el crack Diego es el crack Diego es el crack </p>

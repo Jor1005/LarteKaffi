@@ -11,7 +11,7 @@ function InicioBanner() {
             <img src="\img\WhatsApp.svg.webp" alt="" />      
         </a>
         <a className="instagram" href="https://www.instagram.com/larte_kafi" target="_blank" rel="noopener noreferrer">
-        <img src="public\img\insta.avif" alt="Instagram Logo" />
+        <img src="\img\insta.avif" alt="Instagram Logo" />
         </a>
       </div>
     </section>
