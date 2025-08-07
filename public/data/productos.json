@@ -1,5 +1,6 @@
 [
   {
+    "id": "latte-art",
     "categoria": "Latte Art",
     "productos": [
       { "nombre": "Latera Blanca", "id": 1, "img": "img/Latera Blanca.png" },
@@ -10,9 +11,26 @@
   },
   
   {
+    "id": "balanzas",
     "categoria": "Balanzas",
     "productos": [
       { "nombre": "Balanza 1", "id": 1, "img": "img/balanza1.jpg" }
+    ]
+  },
+
+  {
+    "id": "brew-bar",
+    "categoria": "Brew Bar",
+    "productos": [
+      { "nombre": "Brew 1", "id": 1, "img": "img/prensa.png" }
+    ]
+  },
+
+   {
+    "id": "hervidores",
+    "categoria": "Hervidores Inteligentes",
+    "productos": [
+      { "nombre": "HI 1", "id": 1, "img": "" }
     ]
   }
 ]

@@ -1,6 +1,11 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+
 .tienda {
   min-height: 100vh;
-  
   color: #2b2a28;
   text-align: left;
   background: rgb(192, 192, 192);
@@ -21,28 +26,23 @@
 .tienda p {
   padding: 20px;
 }
-.category_b{
-  height: 60vh;
-  padding: 0 100px;
-  box-sizing: border-box;
+.categoria-section{
+text-align: center;
+margin: 10px 0px
 }
 
-.category_b h2{
-  text-align: center;
+.categoria-section h2{
+  margin: 30px;
 }
 
-.category_a{
-  height: 60vh;
-  padding-bottom: 2%;
+.productos-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
-.category_a h2{
-  text-align: center;
-}
 
 .producto-container {
-  display: flex;
-  width: 150px;
+  width: 100%;
   overflow: hidden;
   place-items: center;
 }
@@ -51,75 +51,17 @@
   object-fit: cover;
   height: 200px;
   width: 100%;
-  
   border: 3px solid #484747e6;
-  margin-bottom: 8px;
+  margin: 8px 0px;
   cursor: pointer;
 }
 
 .producto-container p {
-  font-size: 14px;
-  margin: 0;
+  font-size: 17px;
+  margin-bottom: 20px;
   padding: 0;
   color: #2b2a28;
   
 }
 
-/* Seccion del slider dou como el homero */
 
-.slick-track {
-  position: sticky;
-  margin: 0px ;
-
-}
-
-.slick-slider {
-  width: 90%;
-  margin: 0 auto;
-  object-fit: contain;
-  box-sizing: border-box;
-}
-
-.slick-slide img {
-  width: 100%;
-  max-width: 200px;
-  outline: none;
-}
-
-.slick-list {
-  padding: 0 10px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.slick-prev {
-  left: -45px;
-}
-
-.slick-next {
-  right: -45px;
-}
-
-@media (max-width: 1024px){
-
-.slick-prev {
-  display: none !important;
-  left: 0px;
-}
-
-.slick-next {
-  display: none !important;
-  right: 0px;
-}
-
-}
-
-@media (max-width: 425px) {
-  .slick-list {
-  width: 100%;
-  margin: 0 auto;
-  object-fit: contain;
-  box-sizing: border-box;
-}
-}
