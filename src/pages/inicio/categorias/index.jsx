@@ -1,6 +1,7 @@
 import React from "react";
 import "./categorias.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 
@@ -56,29 +57,32 @@ function Categorias() {
     <section id="productos" className="productos">
       <h1>CATEGORÍAS</h1>
       <Slider {...settings} className="categorias-slider">
-        <div className="categoria" id="latteart">
+        <Link className="categoria" to="/tienda#latte-art">
           <img src="img/latteart.jpg" alt="Latte Art" />
           <p>Latte Art</p>
-        </div>
-        <div className="categoria" id="balanza">
+        </Link>
+        <Link className="categoria" to="/tienda#balanzas">
           <img src="img/balanza1.jpg" alt="Balanzas" />
           <p>Balanzas</p>
-        </div>
-        <div className="categoria" id="expresso">
+        </Link>
+        <Link className="categoria" to="/tienda#espresso">
           <img src="img/latte.png" alt="Expresso Bar" />
           <p>Expresso Bar</p>
-        </div>
-        <div className="categoria" id="hervidores">
+        </Link>
+        <Link className="categoria" to="/tienda#hervidores">
           <img src="img/hervidora.jpg" alt="Hervidores Inteligentes" />
           <p>Hervidores Inteligentes</p>
-        </div>
-        <div className="categoria" id="brewbar">
-          <img src="img/latte.png" alt="Brew Bar" />
+        </Link>
+        <Link className="categoria" id="bb" to="/tienda#brew-bar">
+          <img src="img/prensa.png" alt="Brew Bar" />
           <p>Brew Bar</p>
-        </div>
+        </Link>
       </Slider>
     </section>
   );
 }
 
 export default Categorias;
+
+
+
