@@ -60,7 +60,7 @@ function Tienda() {
       <button onClick={() => setProductoSeleccionado(null)}>✖</button>
       <img src={productoSeleccionado.img} alt={productoSeleccionado.nombre} />
       <h2>{productoSeleccionado.nombre}</h2>
-      <p>Más detalles aquí (puedes agregar precio, descripción, etc).</p>
+      <p>detalles del producto.</p>
       <button onClick={() => alert("Producto agregado al carrito!")}>
         Agregar al carrito
       </button>
