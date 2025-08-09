@@ -64,4 +64,16 @@ margin: 10px 0px
   
 }
 
+@media (max-width: 1030px){
+  .productos-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+}
 
+@media (max-width: 450px){
+  .productos-grid{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+}
