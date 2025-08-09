@@ -32,5 +32,13 @@
     "productos": [
       { "nombre": "HI 1", "id": 1, "img": "" }
     ]
+  },
+
+  {
+    "id": "espresso",
+    "categoria": "Espresso",
+    "productos": [
+      { "nombre": "espresso", "id": 1, "img": "" }
+    ]
   }
 ]
