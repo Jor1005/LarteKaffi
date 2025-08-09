@@ -141,18 +141,27 @@
 }
 
 @media (max-width: 1024px) {
-  .nav-links {
-    gap: 30px;
-    font-size: 0.9em;
-    flex-wrap: wrap;
-    justify-content: center;
+  
+  .droptop-menu{
+        display: none;
   }
+
+  .nav-links li:active > .droptop-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 }
 
 @media (max-width: 780px) {
   .nav-links {
     display: none;
   }
+
+  .droptop-menu{
+    display: none;
+  }
+
 
   .open-sidebar-button {
     display: block;
