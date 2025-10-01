@@ -76,8 +76,8 @@ function Nav() {
             <ul className="droptop-menu" id="productos-droptop-menu">
                 <Link to="/tienda#latte-art">Latte Art</Link>
                 <Link to="/tienda#balanzas">Balanzas</Link>
-                <Link to="/tienda#brew-bar">Brew Bar</Link>
-                <Link to="/tienda#hervidores">Hervidores Inteligentes</Link>
+                <Link to="/tienda#mde">Métodos de extracción</Link>
+                <Link to="/tienda#molinos">Molinos</Link>
                 <Link to="/tienda#espresso">Espresso</Link>
             </ul>
           </li>

@@ -22,7 +22,9 @@
 
 .imagen img {
   margin: 0;
-  width: 19.7pc;
+  width: 21.55pc;
+  padding-bottom:36px ;
+
 }
 
 .slogans {
@@ -58,12 +60,8 @@
   text-align: center;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5%;
-}
-
-.textoyboton {
   text-align: end;
-  padding-bottom: 35vh;
+  padding-bottom: 45vh;
   background: linear-gradient(to bottom, #ffffff 55%, #f9f9f9);
   transition: background 0.5s ease-in-out;
 }
@@ -125,6 +123,8 @@
   font-size: 2.5rem;
   }
 
+
+  
   .textos{
     text-align: center;
   }

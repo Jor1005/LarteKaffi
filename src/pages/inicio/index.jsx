@@ -8,7 +8,7 @@ function Inicio() {
   return (
     <section className="inicio">
       <picture className="imagen">
-        <img src="img/lateras.jpg" alt="" />
+        <img src="img/latera plateada sf.png" alt="" />
       </picture>
       <div className="slogans">
         <h1 className="slogan1">Perfecciona tu arte,</h1>

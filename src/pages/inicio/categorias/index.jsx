@@ -58,7 +58,7 @@ function Categorias() {
       <h1>CATEGORÍAS</h1>
       <Slider {...settings} className="categorias-slider">
         <Link className="categoria" to="/tienda#latte-art">
-          <img src="img/latteart.jpg" alt="Latte Art" />
+          <img src="img/lj-plat-720.png" alt="Latte Art" />
           <p>Latte Art</p>
         </Link>
         <Link className="categoria" to="/tienda#balanzas">
@@ -66,16 +66,16 @@ function Categorias() {
           <p>Balanzas</p>
         </Link>
         <Link className="categoria" to="/tienda#espresso">
-          <img src="img/latte.png" alt="Expresso Bar" />
-          <p>Expresso Bar</p>
+          <img src="img/distribuidor.jpg" alt="Expresso Bar" />
+          <p>Espresso Bar</p>
         </Link>
-        <Link className="categoria" to="/tienda#hervidores">
+        <Link className="categoria" to="/tienda#mde">
           <img src="img/hervidora.jpg" alt="Hervidores Inteligentes" />
-          <p>Hervidores Inteligentes</p>
+          <p>Métodos de extracción</p>
         </Link>
-        <Link className="categoria" id="bb" to="/tienda#brew-bar">
-          <img src="img/prensa.png" alt="Brew Bar" />
-          <p>Brew Bar</p>
+        <Link className="categoria" to="/tienda#molinos">
+          <img src="img/molino-manual.png" alt="Brew Bar" />
+          <p>Molinos</p>
         </Link>
       </Slider>
     </section>
