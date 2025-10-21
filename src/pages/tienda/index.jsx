@@ -56,6 +56,19 @@ function Tienda() {
     arrows: true,
     prevArrow: <Arrow />,
     nextArrow: <Arrow />,
+    responsive:[
+
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 2 },
+        dots: true
+      },
+    {
+        breakpoint: 600,
+        settings: { slidesToShow: 1 },
+        dots: true
+      }
+      ]
   };
 
   useEffect(() => {

@@ -27,26 +27,26 @@
             ]
           },
           {
-            "categoria": "Larte Jugs 720ml",
+            "categoria": "Larte Jugs 700ml",
             "img":"img/lj-plat-720.png",
             "productos": [
               {
-                "nombre": "Larte Jug 720 ml blanca",
+                "nombre": "Larte Jug 700 ml blanca",
                 "id": 1,
                 "img": "img/lj-blan-720.png"
               },
               {
-                "nombre": "Larte Jug 720 ml Negra",
+                "nombre": "Larte Jug 700 ml Negra",
                 "id": 2,
                 "img": "img/lj-ngr-720.png"
               },
               {
-                "nombre": "Larte Jug 720 ml azul",
+                "nombre": "Larte Jug 700 ml azul",
                 "id": 3,
                 "img": "img/lj-azul-720.png"
               },
               {
-                "nombre": "Larte Jug 720 ml plateada",
+                "nombre": "Larte Jug 700 ml plateada",
                 "id": 4,
                 "img": "img/lj-plat-720.png"
               }

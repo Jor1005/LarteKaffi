@@ -224,3 +224,10 @@
     display: none;
   }
 }
+
+@media (max-width: 1000px){
+  .nav-links{
+    gap: 30px;
+    font-size: 0.9em;
+  }
+}

@@ -24,6 +24,8 @@ html {
   ;
 }
 
+
+
 .productosTop h1{
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
@@ -182,9 +184,24 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .productosTop h1{
+  font-size: 2rem;
+}
 }
 
 @media (max-width: 450px) {
+
+.productosTop{
+  margin: 0;
+  padding: 0;
+}
+
+
+.productosTop h1{
+  font-size: 1.7rem;
+}
+
   .productos-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

@@ -22,7 +22,7 @@
 
 .imagen img {
   margin: 0;
-  width: 21.55pc;
+  width: 23.27pc;
   padding-bottom:36px ;
 
 }
@@ -185,3 +185,34 @@
   }
 }
 
+@media (min-width: 2260px) {
+  .imagen img {
+    width: 44.7pc;
+  }
+
+  .slogans{
+    font-size: 2rem;
+  }
+
+  .slogan1{
+    font-size: 5rem;
+  }
+
+  .slogan2{
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  .textoyboton{
+    justify-content: space-evenly;
+  }
+
+  .textos{
+    font-size: 3rem;
+  }
+
+  .boton{
+    width: 400px;
+    font-size: 3rem;
+  }
+}
