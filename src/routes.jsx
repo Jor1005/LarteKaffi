@@ -5,6 +5,7 @@ import SobreNosotros from "./pages/sobre-nosotros";
 import Tienda from "./pages/tienda";
 import Socios from "./pages/socios";
 import Blog from "./pages/blog";
+import ProductoDetalle from "./pages/productos";
 
 function AppRoutes() {
   return (
@@ -13,6 +14,7 @@ function AppRoutes() {
         <Route path="/" element={<App />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
         <Route path="/tienda" element={<Tienda />} />
+        <Route path="/tienda/producto/:id" element={<ProductoDetalle />} />
         <Route path="/socios" element={<Socios />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>

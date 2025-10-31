@@ -64,6 +64,7 @@
   display: flex;
   justify-content: space-around;
   text-align: end;
+  padding-top: 2vw;
   padding-bottom: 45vh;
   background: linear-gradient(to bottom, #ffffff 55%, #f9f9f9);
   transition: background 0.5s ease-in-out;

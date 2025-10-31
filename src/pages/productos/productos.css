@@ -1,0 +1,108 @@
+
+
+.producto-detalle{
+    background-color: rgb(220, 215, 220);
+    height: 100vh;
+
+   align-items: center;
+
+}
+
+.detalle-contenido{
+     margin: 5%;
+     padding: 3%;
+     border: solid ;
+     border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 30vw;
+    background-color: rgb(46, 45, 46);
+}
+
+
+.imagen-unica {
+   height: 30vw;
+    width: 33vw;
+    min-width: 30vw;
+    border-radius: 30px;
+   
+    margin-right: 20px;
+}
+
+
+
+.slider-detalle{
+    width: 35%;
+    border-radius: 20px;
+}
+
+
+.slider-detalle img{
+    height: 29vw;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+.info{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+
+   padding: 2% 10% 5% 5%;
+   background-color: rgb(76, 73, 73);
+   border-radius: 30px;
+}
+
+.info p{
+    font-size: 1.5vw;
+}
+
+.info h1{
+    font-size: 2.5vw;
+    
+}
+
+.wasap{
+    background-color: green;
+    border-radius: 10px;
+    padding: 2%;
+    color: white;
+    font-size: 2vw;
+}
+
+.volver{
+    margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    .detalle-contenido{
+        display: flex;
+        flex-direction: column;
+        height: 100vw;
+        align-items: center;
+    }
+
+    .imagen-unica {
+   height: 50vw;
+    width: 50vw;
+    min-width: 30vw;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.info{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+   min-width: 50vw;
+   padding: 2% 10% 5% 5%;
+   background-color: rgb(76, 73, 73);
+   border-radius: 30px;
+}
+
+}

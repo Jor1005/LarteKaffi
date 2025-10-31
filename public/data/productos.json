@@ -11,17 +11,17 @@
             "productos": [
               {
                 "nombre": "Larte Jug 450 ml blanca",
-                "id": 1,
+                "id": "450ml-1",
                 "img": "img/lj-blan-450.png"
               },
               {
                 "nombre": "Larte Jug 450 ml negra",
-                "id": 2,
+                "id": "450ml-2",
                 "img": "img/lj-ngr-450.png"
               },
               {
                 "nombre": "Larte Jug 450 ml azul",
-                "id": 3,
+                "id": "450ml-3",
                 "img": "img/lj-azul-450.png"
               }
             ]
@@ -32,22 +32,22 @@
             "productos": [
               {
                 "nombre": "Larte Jug 700 ml blanca",
-                "id": 1,
+                "id": "700ml-1",
                 "img": "img/lj-blan-720.png"
               },
               {
                 "nombre": "Larte Jug 700 ml Negra",
-                "id": 2,
+                "id": "700ml-2",
                 "img": "img/lj-ngr-720.png"
               },
               {
                 "nombre": "Larte Jug 700 ml azul",
-                "id": 3,
+                "id": "700ml-3",
                 "img": "img/lj-azul-720.png"
               },
               {
                 "nombre": "Larte Jug 700 ml plateada",
-                "id": 4,
+                "id": "700ml-4",
                 "img": "img/lj-plat-720.png"
               }
             ]
@@ -62,12 +62,12 @@
     "productos": [
       {
         "nombre": "Balanza L",
-        "id": 1,
+        "id": "balanza-1",
         "img": "img/balanza1.jpg"
       },
       {
         "nombre": "Balanza S",
-        "id": 2,
+        "id": "balanza-2",
         "img": ""
       }
     ]
@@ -78,42 +78,42 @@
     "productos": [
       {
         "nombre": "V60",
-        "id": 1,
+        "id": "me-v60-1",
         "img": ""
       },
       {
         "nombre": "Chemex",
-        "id": 2,
+        "id": "me-chem-2",
         "img": ""
       },
       {
         "nombre": "Prensa Francesa",
-        "id": 3,
+        "id": "me-prensf-3",
         "img": ""
       },
       {
         "nombre": "V60 Switch",
-        "id": 4,
+        "id": "me-sw-4",
         "img": ""
       },
       {
         "nombre": "Filtros de papel",
-        "id": 5,
+        "id": "me-fp-5",
         "img": ""
       },
       {
         "nombre": "Hervidora Pro",
-        "id": 6,
+        "id": "me-herv-6",
         "img": "img/hervidora.jpg"
       },
       {
         "nombre": "Balanza L",
-        "id": 7,
-        "img": ""
+        "id": "balanza-1",
+        "img": "img/balanza1.jpg"
       },
       {
         "nombre": "Decantador",
-        "id": 8,
+        "id": "me-dec-7",
         "img": ""
       }
     ]
@@ -124,8 +124,14 @@
     "productos": [
       {
         "nombre": "Molino",
-        "id": 1,
-        "img": "img/molino-manual.png"
+        "id": "mol-1",
+        "img": "img/molino-manual.png",
+        "contenidoExtra": [
+          "img/molino-manual.png",
+          "img/wdt.jpg",
+          "https://www.youtube.com/embed/dQw4w9WgXcQ"
+
+        ]
       }
     ]
   },
@@ -135,27 +141,27 @@
     "productos": [
       {
         "nombre": "WDT",
-        "id": 1,
+        "id": "esp-wdt-1",
         "img": "img/wdt.jpg"
       },
       {
         "nombre": "Distribuidor",
-        "id": 2,
+        "id": "es-dist-2",
         "img": "img/distribuidor.jpg"
       },
       {
         "nombre": "Tamper Retractil",
-        "id": 3,
+        "id": "es-tr-3",
         "img": "img/tamper-retractil.jpg"
       },
       {
         "nombre": "Dosificador",
-        "id": 4,
+        "id": "es-dosif-4",
         "img": ""
       },
       {
         "nombre": "Balanza S",
-        "id": 5,
+        "id": "balanza-2",
         "img": ""
       }
     ]

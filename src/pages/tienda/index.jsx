@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css"; 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Link, useLocation } from "react-router-dom";
 import Nav from "../../componentes/nav";
 import "./tienda.css";
@@ -9,15 +9,19 @@ import "./tienda.css";
 function Tienda() {
   const [categorias, setCategorias] = useState([]);
   const location = useLocation();
-  const [productoSeleccionado, setProductoSeleccionado] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/productos.json")
+      .then((response) => response.json())
+      .then((data) => setCategorias(data))
+      .catch((error) => console.error("Error al cargar productos", error));
+  }, []);
 
   useEffect(() => {
     if (location.hash && categorias.length > 0) {
       const target = document.querySelector(location.hash);
       if (target) {
-        setTimeout(() => {
-          target.scrollIntoView({ behavior: "smooth" });
-        }, 50);
+        setTimeout(() => target.scrollIntoView({ behavior: "smooth" }), 50);
       }
     }
   }, [location, categorias]);
@@ -25,7 +29,7 @@ function Tienda() {
   function Arrow(props) {
     const { className, style, onClick } = props;
     return (
-      <div 
+      <div
         className={`${className} custom-arrow`}
         style={{
           ...style,
@@ -39,7 +43,7 @@ function Tienda() {
           borderRadius: "50%",
           fontSize: "20px",
           zIndex: 2,
-          cursor: "pointer"
+          cursor: "pointer",
         }}
         onClick={onClick}
       />
@@ -47,7 +51,6 @@ function Tienda() {
   }
 
   const settings = {
-    
     dots: true,
     infinite: false,
     speed: 500,
@@ -56,50 +59,43 @@ function Tienda() {
     arrows: true,
     prevArrow: <Arrow />,
     nextArrow: <Arrow />,
-    responsive:[
-
+    responsive: [
       {
         breakpoint: 1024,
         settings: { slidesToShow: 2 },
-        dots: true
       },
-    {
+      {
         breakpoint: 600,
         settings: { slidesToShow: 1 },
-        dots: true
-      }
-      ]
+      },
+    ],
   };
-
-  useEffect(() => {
-    fetch("/data/productos.json")
-      .then((response) => response.json())
-      .then((data) => setCategorias(data))
-      .catch((error) => console.error("Error al cargar productos", error));
-  }, []);
 
   return (
     <section className="tienda">
       <Nav />
       <h1 className="title">Productos</h1>
-      <section className="productosTop">
-        <h1> ★ LO MAS VENDIDO ★</h1>
-      <Slider {...settings}className="slider-productos">
-        <Link className="productoTop" to="">
-                  <img src="img/tamperespec.jpg" alt="Latte Art" />
-          </Link>
-          <Link className="productoTop" to="">
-                  <img src="img/basehervidora.jpg" alt="Latte Art" />
-          </Link>
-          <Link className="productoTop" to="">
-                  <img src="img/ljespec450.jpg" alt="Latte Art" />
-          </Link>
-          <Link className="productoTop" to="">
-                  <img src="img/hervidoraespec.jpg" alt="Latte Art" />
-          </Link>
 
-      </Slider>
+      {/* Sección: Lo más vendido */}
+      <section className="productosTop">
+        <h1> ★ LO MÁS VENDIDO ★ </h1>
+        <Slider {...settings} className="slider-productos">
+          <Link className="productoTop" to="/tienda/producto/tamper-espec">
+            <img src="img/tamperespec.jpg" alt="Tamper especial" />
+          </Link>
+          <Link className="productoTop" to="/tienda/producto/base-hervidora">
+            <img src="img/basehervidora.jpg" alt="Base hervidora" />
+          </Link>
+          <Link className="productoTop" to="/tienda/producto/lj-espec-450">
+            <img src="img/ljespec450.jpg" alt="Latte jug 450ml" />
+          </Link>
+          <Link className="productoTop" to="/tienda/producto/hervidora-espec">
+            <img src="img/hervidoraespec.jpg" alt="Hervidora especial" />
+          </Link>
+        </Slider>
       </section>
+
+      {/* Secciones por categoría */}
       <div className="tienda-container">
         {categorias.map((categoria, i) => {
           const productos = categoria.productos || [];
@@ -117,10 +113,10 @@ function Tienda() {
                       {subcat.productos
                         .filter((p) => p.img && p.img.trim() !== "")
                         .map((producto) => (
-                          <div
+                          <Link
+                            to={`/tienda/producto/${producto.id}`}
                             key={producto.id}
                             className="producto-container"
-                            onClick={() => setProductoSeleccionado(producto)}
                           >
                             <img
                               src={producto.img}
@@ -128,7 +124,7 @@ function Tienda() {
                               loading="lazy"
                             />
                             <h2>{producto.nombre}</h2>
-                          </div>
+                          </Link>
                         ))}
                     </div>
                   </div>
@@ -139,10 +135,10 @@ function Tienda() {
                   {productos
                     .filter((p) => p.img && p.img.trim() !== "")
                     .map((producto, j) => (
-                      <div
-                        key={j}
+                      <Link
+                        to={`/tienda/producto/${producto.id}`}
+                        key={producto.id}
                         className="producto-container"
-                        onClick={() => setProductoSeleccionado(producto)}
                       >
                         <img
                           src={producto.img}
@@ -150,7 +146,7 @@ function Tienda() {
                           loading="lazy"
                         />
                         <p>{producto.nombre}</p>
-                      </div>
+                      </Link>
                     ))}
                 </div>
               )}
@@ -158,27 +154,6 @@ function Tienda() {
           );
         })}
       </div>
-
-      {/* Popup genérico */}
-      {productoSeleccionado && (
-        <div className="popup-overlay" onClick={() => setProductoSeleccionado(null)}>
-          <div
-            className="popup"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button className="cerrar" onClick={() => setProductoSeleccionado(null)}>
-              ✖
-            </button>
-            <img src={productoSeleccionado.img} alt={productoSeleccionado.nombre} />
-            <div className="popup-info">
-              <h2>{productoSeleccionado.nombre}</h2>
-              <p>{productoSeleccionado.descripcion || "Detalles del producto."}</p>
-              <p className="precio">{productoSeleccionado.precio || "$0.00"}</p>
-              <button>Quiero este producto</button>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 }
