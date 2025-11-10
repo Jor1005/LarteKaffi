@@ -61,7 +61,7 @@ function Tienda() {
     nextArrow: <Arrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1090,
         settings: { slidesToShow: 2 },
       },
       {
