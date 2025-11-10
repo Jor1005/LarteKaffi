@@ -80,17 +80,17 @@ function Tienda() {
       <section className="productosTop">
         <h1> ★ LO MÁS VENDIDO ★ </h1>
         <Slider {...settings} className="slider-productos">
-          <Link className="productoTop" to="/tienda/producto/tamper-espec">
+          <Link className="productoTop" to="/tienda/producto/es-tr-3">
             <img src="img/tamperespec.jpg" alt="Tamper especial" />
           </Link>
-          <Link className="productoTop" to="/tienda/producto/base-hervidora">
+          <Link className="productoTop" to="/tienda/producto/me-herv-6">
+            <img src="img/hervidoraespec.jpg" alt="Hervidora especial" />
+          </Link>
+          <Link className="productoTop" to="/tienda/producto/me-herv-6">
             <img src="img/basehervidora.jpg" alt="Base hervidora" />
           </Link>
-          <Link className="productoTop" to="/tienda/producto/lj-espec-450">
+          <Link className="productoTop" to="/tienda/producto/450ml-2">
             <img src="img/ljespec450.jpg" alt="Latte jug 450ml" />
-          </Link>
-          <Link className="productoTop" to="/tienda/producto/hervidora-espec">
-            <img src="img/hervidoraespec.jpg" alt="Hervidora especial" />
           </Link>
         </Slider>
       </section>
@@ -145,7 +145,7 @@ function Tienda() {
                           alt={producto.nombre}
                           loading="lazy"
                         />
-                        <p>{producto.nombre}</p>
+                        <h2>{producto.nombre}</h2>
                       </Link>
                     ))}
                 </div>

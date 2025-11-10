@@ -43,24 +43,7 @@ export default function ProductoDetalle() {
     ...(producto.contenidoExtra && producto.contenidoExtra.length > 0 ? producto.contenidoExtra : []),
   ];
 
-  // 🔄 Convertir URL de YouTube normal a formato embed
-  const convertirAEmbed = (url) => {
-    if (url.includes("youtube.com/watch?v=")) {
-      const id = url.split("v=")[1].split("&")[0];
-      return `https://www.youtube.com/embed/${id}`;
-    } else if (url.includes("youtu.be/")) {
-      const id = url.split("youtu.be/")[1].split("?")[0];
-      return `https://www.youtube.com/embed/${id}`;
-    }
-    return url; // por si acaso no es un video de YouTube
-  };
 
-
-    // 🔍 Función para detectar si el elemento es un video de YouTube
-
-   const esVideo = (url) => {
-    return url.includes("youtube.com") || url.includes("youtu.be");
-  };
 
   const settings = {
     dots: true,
@@ -74,25 +57,40 @@ export default function ProductoDetalle() {
   };
 
   // Determina si un elemento es video o imagen
-  const renderContenido = (item, i) => {
+  const renderContenido = (media, i) => {
     if (
-      typeof item === "string" &&
-      (item.includes("youtube.com") || item.includes("instagram.com"))
+      typeof media === "string" &&
+      (media.includes("youtube.com") || media.includes("instagram.com"))
     ) {
       return (
-        <div key={i} className="video-wrapper">
+        <div key={i} className="media-wrapper">
           <iframe
-            src={item}
+             src={media}
             title={`video-${i}`}
-       
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            className="video-wrapper"
+            allow="accelerometer; autoplay;"
             allowFullScreen
           ></iframe>
         </div>
       );
     }
+    if (/\.(mp4|webm|mov|avi)$/i.test(media)) {
+      return (
+        <video
+          key={i}
+          controls
+          loop
+          muted
+          playsInline
+          className="media-wrapper"
+        >
+          <source src={media} type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+      );
+    }
     // Imagen por defecto
-    return <img key={i} src={item} alt={`${producto.nombre} ${i + 1}`} />;
+    return <img key={i} src={media} alt={`${producto.nombre} ${i + 1}`} />;
   };
 
   return (
@@ -101,37 +99,19 @@ export default function ProductoDetalle() {
       <div className="detalle-contenido">
         {contenido.length > 1 ? (
           <Slider {...settings} className="slider-detalle">
-            {contenido.map((item, i) => (
-              <div key={i}>
-                {esVideo(item) ? (
-                  <iframe
-                    src={convertirAEmbed(item)}
-                    title={`video-${i}`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{
-                      width: "99%",
-                      height: "29vw",
-                      borderRadius: "20px"
-                  
-                    }}
-                  />
-                ) : (
-                  <img src={item} alt={`${producto.nombre} ${i + 1}`} />
-                )}
-              </div>
-            ))}
+                       {contenido.map((media, i) => renderContenido(media, i))}
+
           </Slider>
         ) : (
           contenido.length === 1 && (
-            <img src={contenido[0]} alt={producto.nombre} className="imagen-unica" />
+            <div className="imagen-unica">{renderContenido(contenido[0], 0)}</div>
           )
         )}
 
         <div className="info">
           <h1>{producto.nombre}</h1>
           <p>{producto.descripcion || "Sin descripción disponible."}</p>
-          <p className="precio">{producto.precio || "Precio no disponible"}</p>
+          <p id="precio" className="precio">{producto.precio || "Precio no disponible"}</p>
 
           <a  className= "wasap" href="https://wa.me/51940136456?text=Hola%20estoy%20interesado%20en%20su%20producto" >Quiero este producto</a>
           <Link to="/tienda" className="volver">
