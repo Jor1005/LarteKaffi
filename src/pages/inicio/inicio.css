@@ -37,12 +37,14 @@
   justify-content: end;
   flex-direction: column;
   text-align: right;
-  font-family: "Montserrat", serif;
+  font-family: 'Montserrat', sans-serif;
+ 
   text-shadow: 3px 2.5px 3.7px rgba(0, 0, 0, 0.5);
   margin-right: auto;
 }
 
 .slogan1 {
+  font-weight: 300;
   font-size: 3rem;
   margin: 0;
   text-align: start;
@@ -51,6 +53,7 @@
 }
 
 .slogan2 {
+   font-weight: 300;
   font-size: 3rem;
   margin-right: 50px;
   text-align: end;
@@ -71,16 +74,19 @@
 }
 
 .textos {
+  
   font-size: 1.5em;
   font-family: "Montserrat", serif;
   font-weight: bold;
 }
 
 .texto1 {
+   font-weight: 300;
   margin-bottom: 1px;
 }
 
 .texto2 {
+   font-weight: 300;
   margin: 0;
   text-align: end;
 }
@@ -192,9 +198,9 @@
   }
 }
 
-/* =============================
-   🖥️ LAPTOPS GRANDES (1051px – 1999px)
-============================= */
+
+   /*LAPTOPS GRANDES (1051px - 1999px)*/
+
 @media (min-width: 1051px) and (max-width: 1999px) {
   .imagenyslogans {
     height: 32vw;

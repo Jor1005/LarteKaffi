@@ -94,8 +94,9 @@ export default function ProductoDetalle() {
   };
 
   return (
+    <>
+    <Nav />
     <section className="producto-detalle">
-      <Nav />
       <div className="detalle-contenido">
         {contenido.length > 1 ? (
           <Slider {...settings} className="slider-detalle">
@@ -112,13 +113,15 @@ export default function ProductoDetalle() {
           <h1>{producto.nombre}</h1>
           <p>{producto.descripcion || "Sin descripción disponible."}</p>
           <p id="precio" className="precio">{producto.precio || "Precio no disponible"}</p>
-
+          <div className="botones">
           <a  className= "wasap" href="https://wa.me/51940136456?text=Hola%20estoy%20interesado%20en%20su%20producto" >Quiero este producto</a>
           <Link to="/tienda" className="volver">
             ← Volver a la tienda
           </Link>
+          </div>
         </div>
       </div>
     </section>
+    </>
   );
 }

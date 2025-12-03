@@ -1,19 +1,31 @@
 
+.todo{
+    background-color: #FFF1D7 ;
+     display: flex;
+  flex-direction: column;
+}
+
 .sobre-nosotros{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
-    height: 110vh;
-    background-color: #FFF1D7 ;
+    color: #efeeee;
+    background-color: #ddb975 ;
 }
 .sobre-nosotros h1{
     font-size: 2.5rem;
-    font-family: "Roboto Slab", serif;
+  font-family: "Montserrat", serif;
+  
+  
     font-optical-sizing: auto;
     text-align: center;
 }
 .diego{
+  
+    padding: 5%;
+    background-color: #3c210d;
     margin-top: 5%;
     width:30vh;
     height: auto;
@@ -24,4 +36,20 @@
     border-radius: 20px;
     border: #efeeee solid 3px;
     box-shadow: 2px 2px 30px 10px #a77031;
+}
+
+h1{
+    margin-top: 2%;
+}
+
+.texto p{
+    
+    margin: 10% 0%;
+    padding: 5% 10%;
+}
+
+
+.pc{
+    box-shadow: 2px 2px 30px 10px #a77031;
+    background-color: black;
 }
