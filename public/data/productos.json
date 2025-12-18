@@ -12,14 +12,14 @@
               {
                 "nombre": "Larte Jug 450 ml blanca",
                 "descripcion":"Pico extra fino ideal para cortados y cappuccinos. Capacidad 1 taza",
-                "precio":"S/. 125",
+                "precio":"S/ 125.00",
                 "id": "450ml-1",
                 "img": "img/lj-blan-450.png"
               },
               {
                 "nombre": "Larte Jug 450 ml negra",
                 "descripcion":"Pico extra fino ideal para cortados y cappuccinos. Capacidad 1 taza",
-                "precio":"S/. 125",
+                "precio":"S/ 125.00",
                 "id": "450ml-2",
                 "img": "img/lj-ngr-450.png"
               },
@@ -27,7 +27,7 @@
               {
                 "nombre": "Larte Jug 450 ml azul",
                 "descripcion":"Pico extra fino ideal para cortados y cappuccinos. Capacidad 1 taza",
-                "precio":"S/. 125",
+                "precio":"S/ 125.00",
                 "id": "450ml-3",
                 "img": "img/lj-azul-450.png"
               }
@@ -40,28 +40,28 @@
               {
                 "nombre": "Larte Jug 700 ml blanca",
                 "descripcion":"Pico fino ideal para cappuccinos y lattes. Capacidad 2 tazas",
-                "precio":"S/. 135",
+                "precio":"S/ 135.00",
                 "id": "700ml-1",
                 "img": "img/lj-blan-720.png"
               },
               {
                 "nombre": "Larte Jug 700 ml Negra",
                 "descripcion":"Pico fino ideal para cappuccinos y lattes. Capacidad 2 tazas",
-                "precio":"S/. 135",
+                "precio":"S/ 135.00",
                 "id": "700ml-2",
                 "img": "img/lj-ngr-720.png"
               },
               {
                 "nombre": "Larte Jug 700 ml azul",
                 "descripcion":"Pico fino ideal para cappuccinos y lattes. Capacidad 2 tazas",
-                "precio":"S/. 135",
+                "precio":"S/ 135.00",
                 "id": "700ml-3",
                 "img": "img/lj-azul-720.png"
               },
               {
                 "nombre": "Larte Jug 700 ml plateada",
                 "descripcion":"Pico fino ideal para cappuccinos y lattes. Capacidad 2 tazas",
-                "precio":"S/. 135",
+                "precio":"S/ 135.00",
                 "id": "700ml-4",
                 "img": "img/lj-plat-720.png"
               }
@@ -78,14 +78,14 @@
       {
         "nombre": "Balanza L",
         "descripcion":"Tamaño ideal para usarlo en filtrados, de alta presición y temporizador",
-        "precio":"S/. 160",
+        "precio":"S/ 160.00",
         "id": "balanza-1",
         "img": "img/balanza1.jpg"
       },
       {
         "nombre": "Balanza S",
         "descripcion":"Tamaño ideal para usarlo en espresso, de alta presición y temporizador",
-        "precio":"S/. 150",
+        "precio":"S/ 150.00",
         "id": "balanza-2",
         "img": "img/balanza1.jpg"
       }
@@ -98,14 +98,14 @@
       {
         "nombre": "V60",
         "descripcion":"El v60 clásico para extracciones limpias y balanceadas",
-        "precio":"S/. 35",
+        "precio":"S/ 35.00",
         "id": "me-v60",
         "img": "img/v60.png"
       },
       {
         "nombre": "Chemex",
         "descripcion":"Cafetera tipo Chemex, diseño elegante y funcional. 800ml o 6 tazas",
-        "precio":"S/. 120",
+        "precio":"S/ 120.00",
         "id": "me-chem",
         "img": ""
       },
@@ -117,42 +117,42 @@
       {
         "nombre": "Switch Drip",
         "descripcion":"Inmersion o goteo, tú decides. Controla el flujo y domina tus extracciones",
-        "precio":"S/. 90",
+        "precio":"S/ 90.00",
         "id": "me-sd",
         "img": "img/switchdrip.png"
       },
       {
         "nombre": "V60 Filtro",
         "descripcion":"Ideal para métodos de goteo como V60 o drippers similares",
-        "precio":"S/. 30",
+        "precio":"S/ 30.00",
         "id": "me-v60fil",
         "img": "img/v60fil.png"
       },
       {
         "nombre": "Chemex Filtro",
         "descripcion":"Papel grueso para una extracción más pura y balanceada",
-        "precio":"S/. 40",
+        "precio":"S/ 40.00",
         "id": "me-chemfil",
         "img": "img/chemexfil.png"
       },
       {
         "nombre": "Filter Assist",
         "descripcion":"Purga tu filtro de papel perfecto y rápido, v60, origami, chemex y más",
-        "precio":"S/. 40",
+        "precio":"S/ 40.00",
         "id": "me-filassist",
         "img": "img/fa.png"
       },
       {
         "nombre": "Brew Assist",
         "descripcion":"Distribuye tus vertidos en forma de ducha y homogénea",
-        "precio":"S/. 45",
+        "precio":"S/ 45.00",
         "id": "me-brewassist",
         "img": "img/ba.png"
       },
       {
         "nombre": "Drip Tipo Origami",
         "descripcion":"Dripper estilo origami, tamaño S y colores disponibles, incluye soporte",
-        "precio":"S/. 80",
+        "precio":"S/ 80.00",
         "id": "me-dto",
         "img": "img/dto.png"
       },
@@ -160,21 +160,21 @@
       {
         "nombre": "Hervidora Pro",
         "descripcion":"Cuello de cisne con control de temperatura, mejora tus filtrados",
-        "precio":"S/. 300",
+        "precio":"S/ 300.00",
         "id": "me-herv",
         "img": "img/hervidora.jpg"
       },
       {
         "nombre": "Balanza L",
         "descripcion":"Tamaño ideal para usarlo en filtrados, de alta presición y temporizador",
-        "precio":"S/. 160",
+        "precio":"S/ 160.00",
         "id": "balanza-1",
         "img": "img/balanza1.jpg"
       },
       {
         "nombre": "Decantador",
         "descripcion":"Vidrio borosilicato, resistente al calor y al frío",
-        "precio":"S/. 45",
+        "precio":"S/ 45.00",
         "id": "me-dec",
         "img": "img/decantador.png"
       }
@@ -188,7 +188,7 @@
         "nombre": "Molino",
         "id": "mol-1",
         "descripcion":"muele tu café al instante y conserva su frescura, molienda regulable.",
-        "precio":"S/. 10",
+        "precio":"S/ 10.00",
         "img": "img/molino-manual.png"
       }
     ]
@@ -201,14 +201,14 @@
         "nombre": "Soplador",
         "id": "soplador",
         "descripcion":"Limpia tus molinos, de polvo o café fácil y rápido, también es antiestrés.",
-        "precio":"S/. 20",
+        "precio":"S/ 20.00",
         "img": "img/soplador.png"
       },
       {
         "nombre": "Cepillo Pro",
         "id": "cepillo",
         "descripcion":"Cepillo pro para limpiar tu máquina, se conecta a la lanceta de vapor.",
-        "precio":"S/. 150",
+        "precio":"S/ 150.00",
         "img": "img/cepillo.png"
       }
     ]
@@ -221,14 +221,14 @@
         "nombre": "Set Matcha",
         "id": "setmatcha",
         "descripcion":"Set completo de matcha materiales de cerámica y bambú.",
-        "precio":"S/. 150",
+        "precio":"S/ 150.00",
         "img": "img/sm.png"
       },
       {
         "nombre": "Removedor",
         "id": "removedor",
         "descripcion":"Removedor para matcha de material de bambú",
-        "precio":"S/. 40",
+        "precio":"S/ 40.00",
         "img": "img/removedor.png"
       }
     ]
@@ -240,7 +240,7 @@
       {
         "nombre": "WDT",
         "descripcion":"Evita la canalización durante la extracción",
-        "precio":"S/. 130",
+        "precio":"S/ 130.00",
         "id": "esp-wdt-1",
         "img": "img/wdt.jpg"
       },
@@ -252,28 +252,37 @@
       {
         "nombre": "Tamper Retractil",
         "descripcion":"Incorpora un mecanismo de resorte que aplica una presión constante y controlada",
-        "precio":"S/. 100",
+        "precio":"S/ 100.00",
         "id": "es-tr-3",
         "img": "img/tamper-retractil.jpg"
       },
       {
         "nombre": "Dosificador",
         "descripcion":"Ayudan a romper grumos, nivelar la superficie del café y distribuirlo.",
-        "precio":"S/. 100",
+        "precio":"S/ 100.00",
         "id": "es-dosif-4",
         "img": "img/dosificador.png"
       },
        {
         "nombre": "Knock Box",
         "descripcion":"Alta capacidad y elegancia, ideal para eventos y cafeterías. Incluye secador.",
-        "precio":"S/. 190",
+        "precio":"S/ 190.00",
         "id": "es-kb",
         "img": "img/kb.png"
       },
-      {
+     {
         "nombre": "Balanza S",
+        "descripcion":"Tamaño ideal para usarlo en espresso, de alta presición y temporizador",
+        "precio":"S/ 150.00",
         "id": "balanza-2",
         "img": "img/balanza1.jpg"
+      },
+      {
+        "nombre": "Cernidor",
+        "descripcion":"Eliminar el exceso de finos, sobreextracción y amargor",
+        "precio":"S/ 40.00",
+        "id": "es-cernidor",
+        "img": "img/cernidor.png"
       }
     ]
   }
