@@ -188,7 +188,7 @@
         "nombre": "Molino",
         "id": "mol-1",
         "descripcion":"muele tu café al instante y conserva su frescura, molienda regulable.",
-        "precio":"S/ 10.00",
+        "precio":"S/ 350.00",
         "img": "img/molino-manual.png"
       }
     ]
@@ -214,8 +214,8 @@
     ]
   },
   {
-    "id": "matcha",
-    "categoria": "Matcha",
+    "id": "extras",
+    "categoria": "Extras",
     "productos": [
       {
         "nombre": "Set Matcha",
