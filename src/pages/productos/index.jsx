@@ -5,6 +5,8 @@ import Nav from "../../componentes/nav";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./productos.css";
+import { Helmet } from "react-helmet-async";
+
 
 export default function ProductoDetalle() {
   const { id } = useParams();
@@ -95,6 +97,20 @@ export default function ProductoDetalle() {
 
   return (
     <>
+    <Helmet>
+      <title>{producto.nombre} | Larte Kaffi</title>
+      <meta
+        name="description"
+        content={producto.descripcion || "Producto de Larte Kaffi"}
+      />
+      <meta property="og:title" content={producto.nombre} />
+      <meta
+        property="og:description"
+        content={producto.descripcion || "Producto de Larte Kaffi"}
+      />
+      <meta property="og:image" content={producto.img} />
+    </Helmet>
+   
     <Nav />
     <section className="producto-detalle">
       <div className="detalle-contenido">

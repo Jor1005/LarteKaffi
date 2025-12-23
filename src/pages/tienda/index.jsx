@@ -72,6 +72,8 @@ function Tienda() {
   };
 
   return (
+    <>
+   
     <section className="tienda">
       <Nav />
       <h1 className="title">Productos</h1>
@@ -155,7 +157,9 @@ function Tienda() {
         })}
       </div>
     </section>
+    </>
   );
+  
 }
 
 export default Tienda;

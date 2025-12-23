@@ -1,11 +1,20 @@
 import React from "react";
 import "./inicio.css";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 function Inicio() {
   const navigate = useNavigate();
 
   return (
+    <>
+    <Helmet>
+        <title>Larte Kaffi</title>
+        <meta
+          name="description"
+          content="Accesorios de café y barismo para perfeccionar tu arte y completar tu estación. Latte art, espresso y métodos de extracción."
+        />
+      </Helmet>
     <section className="inicio">
       <div className="imagenyslogans">
       <picture className="imagen">
@@ -26,7 +35,9 @@ function Inicio() {
         </button>
       </div>
     </section>
+    </>
   );
+  
 }
 
 export default Inicio;

@@ -4,7 +4,11 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
+import { HelmetProvider } from "react-helmet-async";
 
+
+
+ 
 function Arrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -54,6 +58,8 @@ function Categorias() {
   };
 
   return (
+   <>
+   
     <section id="productos" className="productos">
       <h1>CATEGORÍAS</h1>
       <Slider {...settings} className="categorias-slider">
@@ -79,6 +85,7 @@ function Categorias() {
         </Link>
       </Slider>
     </section>
+    </>
   );
 }
 
