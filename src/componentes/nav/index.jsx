@@ -78,6 +78,8 @@ function Nav() {
                 <Link to="/tienda#balanzas">Balanzas</Link>
                 <Link to="/tienda#mde">Métodos de extracción</Link>
                 <Link to="/tienda#molinos">Molinos</Link>
+                <Link to="/tienda#limpieza">Limpieza y utiliarios</Link>
+                <Link to="/tienda#extras">Extras</Link>
                 <Link to="/tienda#espresso">Espresso</Link>
             </ul>
           </li>

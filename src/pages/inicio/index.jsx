@@ -18,7 +18,7 @@ function Inicio() {
     <section className="inicio">
       <div className="imagenyslogans">
       <picture className="imagen">
-        <img src="img/latera plateada sf.png" alt="" />
+        <img src="img/latera plateada sf.webp" alt="" />
       </picture>
       <div className="slogans">
         <h1 className="slogan1">Perfecciona tu arte,</h1>

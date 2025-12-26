@@ -17,14 +17,21 @@ function Tienda() {
       .catch((error) => console.error("Error al cargar productos", error));
   }, []);
 
-  useEffect(() => {
-    if (location.hash && categorias.length > 0) {
-      const target = document.querySelector(location.hash);
-      if (target) {
-        setTimeout(() => target.scrollIntoView({ behavior: "smooth" }), 50);
-      }
+ useEffect(() => {
+  const categoriaId =
+    location.state?.categoriaId ||
+    location.hash?.replace("#", "");
+
+  if (categoriaId && categorias.length > 0) {
+    const target = document.getElementById(categoriaId);
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: "smooth" });
+      }, 50);
     }
-  }, [location, categorias]);
+  }
+}, [location, categorias]);
+
 
   function Arrow(props) {
     const { className, style, onClick } = props;
@@ -82,16 +89,16 @@ function Tienda() {
       <section className="productosTop">
         <h1> ★ LO MÁS VENDIDO ★ </h1>
         <Slider {...settings} className="slider-productos">
-          <Link className="productoTop" to="/tienda/producto/es-tr-3">
+          <Link className="productoTop" to="producto/es-tr-3">
             <img src="img/tamperespec.jpg" alt="Tamper especial" />
           </Link>
-          <Link className="productoTop" to="/tienda/producto/me-herv-6">
+          <Link className="productoTop" to="producto/me-herv">
             <img src="img/hervidoraespec.jpg" alt="Hervidora especial" />
           </Link>
-          <Link className="productoTop" to="/tienda/producto/me-herv-6">
+          <Link className="productoTop" to="producto/me-herv">
             <img src="img/basehervidora.jpg" alt="Base hervidora" />
           </Link>
-          <Link className="productoTop" to="/tienda/producto/450ml-2">
+          <Link className="productoTop" to="producto/450ml-2">
             <img src="img/ljespec450.jpg" alt="Latte jug 450ml" />
           </Link>
         </Slider>
@@ -116,8 +123,9 @@ function Tienda() {
                         .filter((p) => p.img && p.img.trim() !== "")
                         .map((producto) => (
                           <Link
-                            to={`/tienda/producto/${producto.id}`}
+                            to={`producto/${producto.id}`}
                             key={producto.id}
+                            state={{ categoriaId: categoria.id }}
                             className="producto-container"
                           >
                             <img
@@ -138,8 +146,9 @@ function Tienda() {
                     .filter((p) => p.img && p.img.trim() !== "")
                     .map((producto, j) => (
                       <Link
-                        to={`/tienda/producto/${producto.id}`}
+                        to={`producto/${producto.id}`}
                         key={producto.id}
+                        state={{ categoriaId: categoria.id }}
                         className="producto-container"
                       >
                         <img

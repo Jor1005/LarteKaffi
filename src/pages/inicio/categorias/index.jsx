@@ -64,24 +64,32 @@ function Categorias() {
       <h1>CATEGORÍAS</h1>
       <Slider {...settings} className="categorias-slider">
         <Link className="categoria" to="/tienda#latte-art">
-          <img src="img/lj-plat-720.png" alt="Latte Art" />
+          <img src="img/lj-plat-720.webp" alt="Latte Art" />
           <p>Latte Art</p>
         </Link>
         <Link className="categoria" to="/tienda#balanzas">
-          <img src="img/balanza1.jpg" alt="Balanzas" />
+          <img src="img/balanza1.webp" alt="Balanzas" />
           <p>Balanzas</p>
         </Link>
         <Link className="categoria" to="/tienda#espresso">
-          <img src="img/distribuidor.jpg" alt="Expresso Bar" />
+          <img src="img/nivelador.webp" alt="Expresso Bar" />
           <p>Espresso Bar</p>
         </Link>
         <Link className="categoria" to="/tienda#mde">
-          <img src="img/hervidora.jpg" alt="Hervidores Inteligentes" />
+          <img src="img/hervidora.webp" alt="Hervidores Inteligentes" />
           <p>Métodos de extracción</p>
         </Link>
         <Link className="categoria" to="/tienda#molinos">
-          <img src="img/molino-manual.png" alt="Brew Bar" />
+          <img src="img/molino-manual.webp" alt="Brew Bar" />
           <p>Molinos</p>
+        </Link>
+         <Link className="categoria" to="/tienda#limpieza">
+          <img src="img/soplador.webp" alt="Limpieza y utiliarios" />
+          <p>Limpieza y utiliarios</p>
+        </Link>
+         <Link className="categoria" to="/tienda#extras">
+          <img src="img/sm.webp" alt="Brew Bar" />
+          <p>Extras</p>
         </Link>
       </Slider>
     </section>
