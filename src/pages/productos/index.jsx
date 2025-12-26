@@ -102,19 +102,7 @@ export default function ProductoDetalle() {
   return (
     
     <>
-    <Helmet>
-      <title>{producto.nombre} | Larte Kaffi</title>
-      <meta
-        name="description"
-        content={producto.descripcion || "Producto de Larte Kaffi"}
-      />
-      <meta property="og:title" content={producto.nombre} />
-      <meta
-        property="og:description"
-        content={producto.descripcion || "Producto de Larte Kaffi"}
-      />
-      <meta property="og:image" content={producto.img} />
-    </Helmet>
+   
    
     <Nav />
     <section className="producto-detalle">
