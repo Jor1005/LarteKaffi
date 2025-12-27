@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link, useLocation } from "react-router-dom";
 import Nav from "../../componentes/nav";
 import "./tienda.css";
-import PromoPop from "../../componentes/promo";
+import PromoPop from "../../componentes/Promo";
 
 function Tienda() {
   const [categorias, setCategorias] = useState([]);
