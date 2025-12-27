@@ -6,12 +6,14 @@ import Categorias from "./inicio/categorias";
 import Footer from "../componentes/footer";
 import GlobalStyles from "../componentes/globalstyles";
 import "./index.css";
+import Promopop from "../componentes/promo";
 
 function App() {
   return (
     <div>
       <GlobalStyles />
       <Nav />
+      <Promopop />
       <Inicio />
       <Categorias />
       <InicioBanner />  

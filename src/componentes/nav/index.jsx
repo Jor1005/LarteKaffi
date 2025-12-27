@@ -88,11 +88,11 @@ function Nav() {
               BLOG
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/socios" onClick={() => setMenuOpen(false)}>
               SOCIOS
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
 

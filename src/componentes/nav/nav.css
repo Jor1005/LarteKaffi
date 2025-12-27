@@ -133,6 +133,7 @@
 }
 
 .lupa img {
+  display: none;
   width: 100%;
   height: 5px 0px;
   object-fit: cover;

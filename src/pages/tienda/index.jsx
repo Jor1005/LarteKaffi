@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link, useLocation } from "react-router-dom";
 import Nav from "../../componentes/nav";
 import "./tienda.css";
+import Promopop from "../../componentes/Promo";
 
 function Tienda() {
   const [categorias, setCategorias] = useState([]);
@@ -83,6 +84,7 @@ function Tienda() {
    
     <section className="tienda">
       <Nav />
+      <Promopop />
       <h1 className="title">Productos</h1>
 
       {/* Sección: Lo más vendido */}

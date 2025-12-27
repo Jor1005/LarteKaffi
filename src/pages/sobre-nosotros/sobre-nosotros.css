@@ -10,9 +10,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: white;
     color: #efeeee;
-    background-color: #ddb975 ;
+    background-color: #1e1e1c ;
 }
 .sobre-nosotros h1{
     font-size: 2.5rem;
@@ -23,9 +23,8 @@
     text-align: center;
 }
 .diego{
-  
+
     padding: 5%;
-    background-color: #3c210d;
     margin-top: 5%;
     width:30vh;
     height: auto;
@@ -43,7 +42,7 @@ h1{
 }
 
 .texto p{
-    
+    color: black;
     margin: 10% 0%;
     padding: 5% 10%;
 }
@@ -51,5 +50,5 @@ h1{
 
 .pc{
     box-shadow: 2px 2px 30px 10px #a77031;
-    background-color: black;
+    background-color: rgb(192, 185, 185);
 }

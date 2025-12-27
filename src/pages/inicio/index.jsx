@@ -3,6 +3,7 @@ import "./inicio.css";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
+
 function Inicio() {
   const navigate = useNavigate();
 

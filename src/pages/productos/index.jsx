@@ -128,7 +128,11 @@ export default function ProductoDetalle() {
               to="/tienda"  state={{ categoriaId }} className="volver">← Volver a la tienda
         </Link>
           </div>
+          <div>
+          Carrusel
         </div>
+        </div>
+        
       </div>
     </section>
     </>
