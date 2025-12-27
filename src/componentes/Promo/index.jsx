@@ -32,3 +32,6 @@ export default function PromoPop(){
         </div>
     );
     }
+
+    export { default } from "./PromoPop";
+
