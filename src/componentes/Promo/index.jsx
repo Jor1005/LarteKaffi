@@ -1,7 +1,7 @@
 import {useState, useEffect } from "react";
 import "./promo.css"
 
-export default function Promopop(){
+export default function PromoPop(){
     const [visible, setVisible] = useState(false);
 
     useEffect(()=>{
@@ -13,7 +13,6 @@ export default function Promopop(){
 
         },[]);
 
-    if (!visible) return null;
 
     
 
