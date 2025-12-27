@@ -1,7 +1,7 @@
 import {useState, useEffect } from "react";
 import "./promo.css"
 
-export default function PromoPop(){
+ function PromoPop(){
     const [visible, setVisible] = useState(false);
 
     useEffect(()=>{
@@ -33,5 +33,7 @@ export default function PromoPop(){
     );
     }
 
-    export { default } from "./PromoPop";
+    export default PromoPop;
+
+
 

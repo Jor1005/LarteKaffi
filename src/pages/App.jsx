@@ -6,7 +6,7 @@ import Categorias from "./inicio/categorias";
 import Footer from "../componentes/footer";
 import GlobalStyles from "../componentes/globalstyles";
 import "./index.css";
-import PromoPop from "../componentes/promo";
+import PromoPop from "../componentes/promo/index.jsx";
 
 function App() {
   return (
