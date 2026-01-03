@@ -27,7 +27,7 @@ import "./promo.css"
             </button>
 
             <div className="promo-pop-content">
-                ¡Por compras mayores a S/ 100 el envío es gratuito!
+                ¡Por compras mayores a S/100 el envío es gratuito!
             </div>
         </div>
     );

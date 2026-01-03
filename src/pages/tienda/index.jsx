@@ -6,6 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 import Nav from "../../componentes/nav";
 import "./tienda.css";
 import PromoPop from "../../componentes/Promo";
+import Footer from "../../componentes/footer";
 
 function Tienda() {
   const [categorias, setCategorias] = useState([]);
@@ -167,6 +168,7 @@ function Tienda() {
           );
         })}
       </div>
+      <Footer/>
     </section>
     </>
   );

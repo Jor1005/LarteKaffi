@@ -5,10 +5,9 @@ function Footer() {
   return (
     <section className="footer">
       <div className="footer-content">
-          <h3>Larte Kafi</h3>
-          <p>Perfecciona tu arte, completa tu estación.</p>
+        <h1>Envíos a todo Lima y a provincia a través de la agencia Shalom</h1>
+          <h2>Larte Kafi</h2>
           <p>© 2025 Copyright </p>
-          <p>Creado por Gindherson AR Dev</p>
       </div>
     </section>
   );

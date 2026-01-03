@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./productos.css";
 import { Helmet } from "react-helmet-async";
+import Footer from "../../componentes/footer";
 
 
 export default function ProductoDetalle() {
@@ -134,6 +135,7 @@ export default function ProductoDetalle() {
         </div>
         
       </div>
+      <Footer/>
     </section>
     </>
   );

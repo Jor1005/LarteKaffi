@@ -97,6 +97,13 @@
     margin: 40px auto;
   }
   
+  .categoria{
+     box-shadow:
+    1px 20px 12px rgba(0, 0, 0, 0.5),
+    -10px -10px 10px white;
+  transition: 0.2s ease-in-out;
+  }
+
 }
 
 @media (max-width: 450px) {
@@ -119,6 +126,10 @@
   .categoria{
     width: 90%;
     height: auto;
+     box-shadow:
+    1px 20px 12px rgba(0, 0, 0, 0.5),
+    -10px -10px 10px white;
+  transition: 0.2s ease-in-out;
   }
   
   .categoria img{

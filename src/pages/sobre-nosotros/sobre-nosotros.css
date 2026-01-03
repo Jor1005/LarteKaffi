@@ -3,52 +3,167 @@
     background-color: #FFF1D7 ;
      display: flex;
   flex-direction: column;
+  background-color:#1e1e1c ;
 }
 
-.sobre-nosotros{
-    
+
+.sobre-nosotros{  
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
     color: #efeeee;
     background-color: #1e1e1c ;
 }
 .sobre-nosotros h1{
-    font-size: 2.5rem;
+    font-size: 4rem;
   font-family: "Montserrat", serif;
-  
+  margin-bottom: 20px;
   
     font-optical-sizing: auto;
     text-align: center;
 }
-.diego{
 
+.sobre-nosotros h2{
+    margin-bottom: 60px;
+}
+
+
+.latera-diego{
+    display: flex;
+}
+.diego{
+    display: flex;
     padding: 5%;
     margin-top: 5%;
     width:30vh;
     height: auto;
-    text-align: center;
+    text-align: end;
+    margin-bottom: 80px;
+    margin-left: 200px;
 }
 .diego img{
-    max-width:100%;
+
+    max-width:120%;
+    border-radius: 0px 50px 50px 50px;
+    border: #d2cfcf solid 30px; 
+    border-bottom:rgb(141, 139, 139) solid 30px;
+    border-left:rgb(228, 226, 226) solid 30px;
+    border-right: rgb(163, 163, 163)solid 30px; 
+    rotate: 320deg;
+}
+
+.asadiego{
+
+     rotate: 320deg;
+    width: 120px;
+  height: 200px;
+  background: transparent;
+  border-radius: 100px 100px 500px 200px;
+  border-top: solid 20px  rgb(163, 163, 163);
+  border-right: solid 20px rgb(227, 222, 222);
+  border-bottom: solid 20px rgb(163, 163, 163);
+  margin-top: -15px;
+  margin-left: 15px;
+}
+
+.taza-cafe{
+    display: flex;
+     transform: scale(0.8);
+  transform-origin: top center;
+}
+
+.taza{
+    box-shadow: 0px -70px 60px -40px rgb(176, 103, 44);
+    position: relative;
+    text-align: center;
+    margin: 10px 100px 100px 50px;
+    display: flex;
+    padding: 0px 80px;
+    width: 700px;
+    height: 450px;
+    background-color: #ffffff;
+    color: #1e1e1c;
+    border-radius: 30px 30px 350px 350px;
+    border-right:#cecccc solid 20px ;
+    border-bottom:#cecccc solid 20px ;
+    border-top:#cecccc solid 5px ;
+}
+
+.asa{
+  width: 250px;
+  height: 300px;
+  background: transparent;
+  border-radius: 120px 120px 500px 50px;
+  border-top: solid 20px rgb(255, 255, 255);
+  border-right: solid 20px white;
+  border-bottom: solid 20px white;
+  margin-top: 30px;
+  margin-left: -200px;
+}
+
+.taza-textos{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+}
+
+.taza-textos p{
+    margin: 20px;
+}
+
+@media (max-width: 880px) {
+    
+ .latera-diego{
+    transform: scale(0.8);
+
+    
+ }   
+.taza-cafe{
+    display: flex;
+     transform: scale(0.5);
+  transform-origin: top center;
+}
+
+.sobre-nosotros h2{
+    margin: 5% 10%;
+}
+
+}
+
+@media (max-width: 550px){
+
+    .sobre-nosotros h2{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+.latera-diego{
+    display: none;
+}
+
+.diego img{
+    rotate: 0deg;
+}
+
+.diego{
+    margin: 10px 0px;
+}
+
+.asadiego{
+    rotate: 0deg;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.taza{
     border-radius: 20px;
-    border: #efeeee solid 3px;
-    box-shadow: 2px 2px 30px 10px #a77031;
+    width: 100%;
+    height: 100%;
 }
 
-h1{
-    margin-top: 2%;
-}
-
-.texto p{
-    color: black;
-    margin: 10% 0%;
-    padding: 5% 10%;
 }
 
 
-.pc{
-    box-shadow: 2px 2px 30px 10px #a77031;
-    background-color: rgb(192, 185, 185);
-}
+
+
+
+

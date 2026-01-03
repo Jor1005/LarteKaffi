@@ -7,3 +7,7 @@
     padding-bottom: 0.5%;
     border-top: solid rgb(250, 220, 153);
 }
+
+.footer p{
+    margin: 0;
+}
