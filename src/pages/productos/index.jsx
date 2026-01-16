@@ -5,7 +5,6 @@ import Nav from "../../componentes/nav";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./productos.css";
-import { Helmet } from "react-helmet-async";
 import Footer from "../../componentes/footer";
 
 
@@ -14,25 +13,41 @@ export default function ProductoDetalle() {
   const [producto, setProducto] = useState(null);
   const location = useLocation();
   const categoriaId = location.state?.categoriaId;
+  const [relacionados, setRelacionados] = useState([]);
+
+
+
 
   useEffect(() => {
-    fetch("/data/productos.json")
-      .then((res) => res.json())
-      .then((data) => {
-        for (const cat of data) {
-          for (const p of cat.productos) {
-            if (p.productos) {
-              for (const sub of p.productos) {
-                if (String(sub.id) === id) return setProducto(sub);
-              }
-            } else if (String(p.id) === id) {
-              return setProducto(p);
+  fetch("/data/productos.json")
+    .then((res) => res.json())
+    .then((data) => {
+      let productoEncontrado = null;
+      let productosRelacionados = [];
+
+      data.forEach(cat => {
+        cat.productos.forEach(p => {
+          if (p.productos) {
+            const sub = p.productos.find(s => String(s.id) === id);
+            if (sub) {
+              productoEncontrado = sub;
+              productosRelacionados = p.productos.filter(s => String(s.id) !== id);
             }
           }
-        }
-      })
-      .catch((err) => console.error("Error cargando producto:", err));
-  }, [id]);
+          else if (String(p.id) === id) {
+            productoEncontrado = p;
+            productosRelacionados = cat.productos.filter(s => String(s.id) !== id);
+          }
+        });
+      });
+
+      if (productoEncontrado) {
+        setProducto(productoEncontrado);
+        setRelacionados(productosRelacionados);
+      }
+    })
+    .catch((err) => console.error(err));
+}, [id]);
 
   if (!producto)
     return (
@@ -42,7 +57,7 @@ export default function ProductoDetalle() {
       </div>
     );
 
-  // ✅ Combina la imagen principal y las adicionales si existen
+  
   const contenido = [
     ...(producto.img ? [producto.img] : []),
     ...(producto.contenidoExtra && producto.contenidoExtra.length > 0 ? producto.contenidoExtra : []),
@@ -61,7 +76,31 @@ export default function ProductoDetalle() {
     adaptiveHeight: true,
   };
 
-  // Determina si un elemento es video o imagen
+
+  const settings2 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    adaptiveHeight: true,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+  }
+  
   const renderContenido = (media, i) => {
     if (
       typeof media === "string" &&
@@ -94,7 +133,7 @@ export default function ProductoDetalle() {
         </video>
       );
     }
-    // Imagen por defecto
+   
     return <img key={i} src={media} alt={`${producto.nombre} ${i + 1}`} />;
   };
 
@@ -129,14 +168,28 @@ export default function ProductoDetalle() {
               to="/tienda"  state={{ categoriaId }} className="volver">← Volver a la tienda
         </Link>
           </div>
-          <div>
-          Carrusel
-        </div>
+          
         </div>
         
       </div>
+      {relacionados.length > 0 && (
+      <div className="recomendados-container">
+      <p className="pr">Productos Recomendados</p>
+      <Slider {...settings2} className="slider-detalle"> 
+              {relacionados.map((rel) => (
+              <Link key={rel.id} to={`/tienda/producto/${rel.id}`} state={{ categoriaId }}>
+                  <div className="card-relacionado">
+                  <img src={rel.img} alt={rel.nombre} />
+                  <p>{rel.nombre}</p>
+                </div>
+              </Link>
+              ))}
+           </Slider>
+           </div>
+           )}
       <Footer/>
     </section>
     </>
   );
 }
+
