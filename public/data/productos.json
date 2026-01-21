@@ -110,15 +110,25 @@
       },
       {
         "nombre": "Prensa Francesa",
+        "descripcion":"Vidrio borosilicato resite altas y bajas temperaturas. Capacidad de 800ml",
         "id": "me-prensf",
-        "img": ""
+        "img": "img/prensa.webp",
+        
+        "precio":"S/ 50.00",
+        "contenidoExtra": [
+          "img/prensa2.webp"
+        ]
       },
       {
         "nombre": "Switch Drip",
         "descripcion":"Inmersion o goteo, tú decides. Controla el flujo y domina tus extracciones",
         "precio":"S/ 90.00",
         "id": "me-sd",
-        "img": "img/switchdrip.webp"
+        "img": "img/switchdrip.webp",
+        "contenidoExtra":[
+          "img/switchdrip2.webp",
+          "img/switchdrip3.webp"
+        ]
       },
       {
         "nombre": "V60 Filtro",
@@ -176,6 +186,19 @@
         "precio":"S/ 45.00",
         "id": "me-dec",
         "img": "img/decantador.webp"
+      },
+      {"nombre":"Torre Cold Brew",
+        "descripcion":"- Medida de altura total: 112cm \n- Capacidad de recipiente hielo y agua: 3570ml \nCapacidad de recipiente de café: 1 kilo \n- Serpentina para oxigenar el Cold Brew \n- Medida de la base: 31cm x 31cm \n- Capacidad decantador: 3000ml",
+        "precio":"S/ 1350.00",
+        "id":"me-torre",
+        "img":"img/torrepromo.webp",
+        "contenidoExtra":[
+          "img/torre.webp",
+          "img/torre2.webp",
+          "img/torre3.webp",
+          "img/torre4.webp",
+          "img/torre5.webp"
+        ]
       }
     ]
   },
@@ -209,6 +232,17 @@
         "descripcion":"Cepillo pro para limpiar tu máquina, se conecta a la lanceta de vapor.",
         "precio":"S/ 150.00",
         "img": "img/cepillo.webp"
+      },
+      {
+        "nombre":"ETCHING",
+        "id":"etching",
+        "descripcion":"Pincel para hacer latte art, con mango de madera para una mayor precision en el agarre.",
+        "precio":"S/20.00",
+        "img":"img/etching1.webp",
+        "contenidoExtra":[
+         "img/etching.webp",
+         "img/etching3.webp"
+        ]
       }
     ]
   },

@@ -175,7 +175,7 @@ export default function ProductoDetalle() {
       {relacionados.length > 0 && (
       <div className="recomendados-container">
       <p className="pr">Productos Recomendados</p>
-      <Slider {...settings2} className="slider-detalle"> 
+      <Slider {...settings2} className="slider-detalle-rec"> 
               {relacionados.map((rel) => (
               <Link key={rel.id} to={`/tienda/producto/${rel.id}`} state={{ categoriaId }}>
                   <div className="card-relacionado">

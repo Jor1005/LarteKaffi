@@ -104,6 +104,9 @@ function Tienda() {
           <Link className="productoTop" to="producto/450ml-2">
             <img src="img/ljespec450.jpg" alt="Latte jug 450ml" />
           </Link>
+          <Link className="productoTop" to="producto/me-torre">
+            <img src="img/torrepromo.webp" alt="Torre Cold Brew" />
+          </Link>
         </Slider>
       </section>
 

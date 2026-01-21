@@ -34,7 +34,7 @@
 .slider-detalle {
     margin-top: 2%;
   width: 100%;
-  max-width: 650px;
+  max-width: 450px;
   background-color: rgb(46, 45, 46);
   border-radius: 20px;
   padding: 10px;
@@ -54,7 +54,7 @@
     color: black;
    display: flex;
    flex-direction: column;
-
+    white-space: pre-line;
    align-items: start;
    justify-content: center;
    padding: 0% 5% 5% 5%;
@@ -126,11 +126,32 @@
 
 
 .pr{
+    margin-top: 10%;
     font-size: 3em;
     color: #141413;
 }
 
-.slider-detalle.slick-slider {
+.slider-detalle-rec {
+    margin-top: 2%;
+    margin-bottom: 10%;
+  width: 100%;
+  max-width: 550px;
+  background-color: rgb(46, 45, 46);
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+
+.slider-detalle-rec img,
+.slider-detalle-rec video {
+  width: 100%;
+  height: auto;
+  max-height: 45vw;
+  object-fit: contain;
+}
+
+.slider-detalle.slick-slider-rec {
   margin-top: 30px;
   margin-bottom: 50px;
 
