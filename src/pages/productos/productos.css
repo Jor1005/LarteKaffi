@@ -265,7 +265,7 @@ margin-left: 30px;
 }
   .slider-detalle {
         display: block !important;
-        width: 90% !important;
+        width: 80% !important;
         height: auto !important;
         min-height: 250px; 
         overflow: visible !important;
@@ -279,7 +279,7 @@ margin-left: 30px;
 
 .slider-detalle img,
     .slider-detalle video {
-        margin-left: 30px;
+       
         display: block !important;
         width: 100% !important;
         height: auto !important;
@@ -297,6 +297,18 @@ margin-left: 30px;
 .card-relacionado img{
     border-radius: 20px !important;
 }
+
+.recomendados-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-detalle-rec{
+    width: 50%;
+}
+
+
 
 .media-wrapper {
         display: block !important;
@@ -351,7 +363,7 @@ margin-left: 30px;
     }
 
     .volver {
-        width: 100%;
+        width: 94%;
         margin-top: 10px;
     }
 

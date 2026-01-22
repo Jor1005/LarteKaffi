@@ -83,16 +83,16 @@ function Nav() {
                 <Link to="/tienda#espresso">Espresso</Link>
             </ul>
           </li>
-          <li>
+          {/* <li>
             <Link to="/blog" onClick={() => setMenuOpen(false)}>
               BLOG
             </Link>
-          </li>
-          {/* <li>
-            <Link to="/socios" onClick={() => setMenuOpen(false)}>
-              SOCIOS
-            </Link>
           </li> */}
+          <li>
+            <Link to="/alianzas" onClick={() => setMenuOpen(false)}>
+              ALIANZAS
+            </Link>
+          </li>
         </ul>
       </nav>
 

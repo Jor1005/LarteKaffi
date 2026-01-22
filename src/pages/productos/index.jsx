@@ -78,7 +78,7 @@ export default function ProductoDetalle() {
 
 
   const settings2 = {
-    dots: true,
+    dots : true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
