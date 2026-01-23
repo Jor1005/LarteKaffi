@@ -65,8 +65,21 @@
                 "img": "img/lj-plat-720.webp"
               }
             ]
-          }
-        
+            
+          },
+        {
+          "categoria": "Dibujo",
+            "img":"img/etching.webp",
+            "productos":[
+              {
+              "nombre": "ETCHING",
+              "descripcion":"Pincel para hacer latte art, con mango de madera para una mayor    precision en el agarre.",
+              "precio":"S/ 20.00",
+              "id":"etching",
+              "img": "img/etching1.webp"
+              }
+            ]
+        }
        
     ]
   },
