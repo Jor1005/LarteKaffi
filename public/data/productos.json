@@ -218,18 +218,8 @@
         "precio":"S/ 45.00",
         "id": "me-dec",
         "img": "img/decantador.webp"
-      },
-       {
-        "nombre":"ETCHING",
-        "id":"etching",
-        "descripcion":"Pincel para hacer latte art, con mango de madera para una mayor precision en el agarre.",
-        "precio":"S/20.00",
-        "img":"img/etching1.webp",
-        "contenidoExtra":[
-         "img/etching.webp",
-         "img/etching3.webp"
-        ]
       }
+       
     ]
   },
   {
