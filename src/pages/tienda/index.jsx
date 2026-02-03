@@ -88,7 +88,7 @@ function Tienda() {
       <PromoPop />
       <h1 className="title">Productos</h1>
 
-      {/* Sección: Lo más vendido */}
+     
       <section className="productosTop">
         <h1> ★ LO MÁS VENDIDO ★ </h1>
         <Slider {...settings} className="slider-productos">
@@ -110,7 +110,7 @@ function Tienda() {
         </Slider>
       </section>
 
-      {/* Secciones por categoría */}
+      
       <div className="tienda-container">
         {categorias.map((categoria, i) => {
           const productos = categoria.productos || [];

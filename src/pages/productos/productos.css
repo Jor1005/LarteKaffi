@@ -27,6 +27,7 @@
     min-width: 30vw;
     border-radius: 30px;
     margin-right: 20px;
+
 }
 
 
@@ -197,7 +198,7 @@
   color: #333 !important;
 }
 
-@media (max-width: 1030px){
+@media (max-width: 800px){
     .detalle-contenido{
 
         display: flex;
@@ -224,10 +225,17 @@
 
 .imagen-unica{
 margin-left: 30px;
-
+margin-top: 30px;
 }
 
-    .wasap{
+.imagen-unica img{
+    width: 40vw;
+    height: 40vw;
+}
+
+
+
+.wasap{
     background-color: #141413;
     border-radius: 10px;
     padding: 3% ;
@@ -236,11 +244,15 @@ margin-left: 30px;
     padding-top: 5%;
 }
 
-
+.recomendados-container{
+    width: 80%;
+}
 
 }
 
-@media (max-width: 450px) {
+
+
+@media (max-width: 550px) {
 
     .producto-detalle{
     background-color: rgb(220, 215, 220);
@@ -305,7 +317,7 @@ margin-left: 30px;
 }
 
 .slider-detalle-rec{
-    width: 50%;
+    width: 90%;
 }
 
 
@@ -330,6 +342,7 @@ margin-left: 30px;
         height: 85vw;
         margin-right: 40px;
         min-width: unset;
+        
     }
 
 .info {

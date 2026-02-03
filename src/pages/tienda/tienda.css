@@ -170,6 +170,10 @@ html {
   font-size: 2rem;
 }
 
+.productoTop{
+   max-width: fit-content;
+}
+
 .producto-container{
   box-shadow:
     10px 25px 20px rgb(88, 86, 86);
@@ -207,6 +211,8 @@ html {
   width: 200px;
 }
 
-
+.productoTop{
+ max-width: fit-content;
+}
 
 }

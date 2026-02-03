@@ -88,6 +88,8 @@
 }
 
 
+
+
 @media (max-width: 1024px){
   .custom-arrow{
     display: none !important ;
@@ -106,39 +108,11 @@
 
 }
 
-@media (max-width: 450px) {
+  @media (max-width: 500px) {
   
-  .productos {
-    height: 100%;
-    background-color: #f9f9f9;
-    color: rgb(62, 37, 4);
-    text-align: center;
-  }
-
   .productos h1{
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 1.5rem;
   }
-  .categorias-slider{
-    padding: 10px;
-    margin: 0px 0px 0px 0px!important;
-  }
-  .categoria{
-    width: 90%;
-    height: auto;
-     box-shadow:
-    1px 20px 12px rgba(0, 0, 0, 0.5),
-    -10px -10px 10px white;
-  transition: 0.2s ease-in-out;
-  }
-  
-  .categoria img{
-    height: 140px;
-  }
-  .custom-arrow {
- display: none !important;
-  }
-
 
 }
 

@@ -19,7 +19,8 @@ function Arrow(props) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "#2b2a28",
+        background: "#ffffff",
+        color:"#ffffff",
         width: "40px",
         height: "40px",
         textAlign: "center",
@@ -49,11 +50,13 @@ function Categorias() {
         breakpoint: 1024,
         settings: { slidesToShow: 3 }
       },
+     
       {
-        breakpoint: 600,
+        breakpoint: 650,
         settings: { slidesToShow: 1 },
         dots: true
       }
+      
     ]
   };
 

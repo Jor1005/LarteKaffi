@@ -115,9 +115,7 @@
   color: #ddb975;
 }
 
-/* =============================
-   📱 MÓVILES (hasta 500px)
-============================= */
+
 @media (max-width: 500px) {
   .inicio {
     margin-bottom: 0;
@@ -151,7 +149,7 @@
   }
 
   .textos {
-    border-top: solid #502e07 2px;
+
     text-align: center;
   }
 
@@ -166,9 +164,7 @@
   }
 }
 
-/* =============================
-   💻 TABLETS (501px – 1050px)
-============================= */
+
 @media (max-width: 1050px) and (min-width: 501px) {
   .imagenyslogans {
     height: 45vw;
@@ -199,7 +195,7 @@
 }
 
 
-   /*LAPTOPS GRANDES (1051px - 1999px)*/
+
 
 @media (min-width: 1051px) and (max-width: 1999px) {
   .imagenyslogans {
@@ -217,9 +213,7 @@
   }
 }
 
-/* =============================
-   🖥️ 4K y ULTRA (2000px+)
-============================= */
+
 @media (min-width: 2000px) {
   .imagenyslogans {
     height: 34vw;
