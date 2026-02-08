@@ -10,7 +10,7 @@ function Inicio() {
   return (
     <>
     <Helmet>
-        <title>Larte Kaffi</title>
+        <title>Larte Kafi</title>
         <meta
           name="description"
           content="Accesorios de café y barismo para perfeccionar tu arte y completar tu estación. Latte art, espresso y métodos de extracción."
