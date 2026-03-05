@@ -27,7 +27,7 @@ function Nav() {
     <header className="navbar">
       <div className="logo">
         <Link to="/">
-          <img src="img/logo.png" alt="logo" />
+          <img src="/img/logo.png" alt="logo" />
         </Link>
       </div>
 

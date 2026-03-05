@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, BrowserRouter } from "react-router-dom";
 import App from "../src/pages/App";
 import SobreNosotros from "./pages/sobre-nosotros";
 import Tienda from "./pages/tienda";
@@ -9,7 +9,7 @@ import ProductoDetalle from "./pages/productos";
 
 function AppRoutes() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
@@ -18,7 +18,7 @@ function AppRoutes() {
         <Route path="/alianzas" element={<Alianzas />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
