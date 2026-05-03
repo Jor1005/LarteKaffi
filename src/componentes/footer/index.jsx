@@ -8,6 +8,7 @@ function Footer() {
         <h1>Envíos a todo Lima y a provincia a través de la agencia Shalom</h1>
           <h2>Larte Kafi</h2>
           <p>© 2025 Copyright </p>
+          <p className="yo">Desarrollado por: Jorginiho Andherson</p>
       </div>
     </section>
   );
